@@ -1,0 +1,30 @@
+2020-10-15 22:37:09,566 - BrowserEngine - INFO - You had select Chrome browser.
+2020-10-15 22:37:09,566 - BrowserEngine - INFO - The test server url is: https://tsoms2.g-parts.cn
+2020-10-15 22:37:11,171 - BrowserEngine - INFO - Starting Chrome browser.
+2020-10-15 22:37:13,517 - BrowserEngine - INFO - Open url: https://tsoms2.g-parts.cn
+2020-10-15 22:37:13,648 - BrowserEngine - INFO - Maximize the current window.
+2020-10-15 22:37:13,649 - BrowserEngine - INFO - Set implicitly wait 10 seconds.
+2020-10-15 22:37:13,706 - BasePage - INFO - Had find the element '  ' successful by xpath via value: //*[@id="app"]/div/div[2]/div/div/div/form/div[2]/div/div/input 
+2020-10-15 22:37:13,839 - BasePage - INFO - Had type ' dfd ' in inputBox
+2020-10-15 22:37:13,874 - BasePage - INFO - Had find the element '  ' successful by xpath via value: //*[@id="app"]/div/div[2]/div/div/div/form/div[3]/div/div/input 
+2020-10-15 22:37:14,040 - BasePage - INFO - Had type ' 123456 ' in inputBox
+2020-10-15 22:37:14,079 - BasePage - INFO - Had find the element ' 登录 ' successful by xpath via value: /html/body/div[1]/div/div[2]/div/div/div/form/div[5]/div 
+2020-10-15 22:37:14,176 - BasePage - INFO - The element ' 登录 ' was clicked.
+2020-10-15 22:37:15,501 - BasePage - INFO - Had find the element ' 调拨管理 ' successful by xpath via value: //*[@id="leftInner"]/ul/li[4]/div 
+2020-10-15 22:37:15,587 - BasePage - INFO - The element ' 调拨管理 ' was clicked.
+2020-10-15 22:37:29,341 - BasePage - INFO - Had find the element ' 1 ' successful by xpath via value: //*[contains(text(),"1")] 
+2020-10-15 22:37:40,667 - BrowserEngine - INFO - You had select Chrome browser.
+2020-10-15 22:37:40,667 - BrowserEngine - INFO - The test server url is: https://tsoms2.g-parts.cn
+2020-10-15 22:37:42,351 - BrowserEngine - INFO - Starting Chrome browser.
+2020-10-15 22:37:44,780 - BrowserEngine - INFO - Open url: https://tsoms2.g-parts.cn
+2020-10-15 22:37:44,915 - BrowserEngine - INFO - Maximize the current window.
+2020-10-15 22:37:44,917 - BrowserEngine - INFO - Set implicitly wait 10 seconds.
+2020-10-15 22:37:44,987 - BasePage - INFO - Had find the element '  ' successful by xpath via value: //*[@id="app"]/div/div[2]/div/div/div/form/div[2]/div/div/input 
+2020-10-15 22:37:45,135 - BasePage - INFO - Had type ' dfd ' in inputBox
+2020-10-15 22:37:45,174 - BasePage - INFO - Had find the element '  ' successful by xpath via value: //*[@id="app"]/div/div[2]/div/div/div/form/div[3]/div/div/input 
+2020-10-15 22:37:45,336 - BasePage - INFO - Had type ' 123456 ' in inputBox
+2020-10-15 22:37:45,375 - BasePage - INFO - Had find the element ' 登录 ' successful by xpath via value: /html/body/div[1]/div/div[2]/div/div/div/form/div[5]/div 
+2020-10-15 22:37:45,466 - BasePage - INFO - The element ' 登录 ' was clicked.
+2020-10-15 22:37:46,500 - BasePage - INFO - Had find the element ' 调拨管理 ' successful by xpath via value: //*[@id="leftInner"]/ul/li[4]/div 
+2020-10-15 22:37:46,580 - BasePage - INFO - The element ' 调拨管理 ' was clicked.
+2020-10-15 22:38:00,290 - BasePage - INFO - Had find the element ' 1 ' successful by xpath via value: //*[contains(text(),"1")] 

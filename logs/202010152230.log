@@ -1,0 +1,104 @@
+2020-10-15 22:30:01,621 - BrowserEngine - INFO - You had select Chrome browser.
+2020-10-15 22:30:01,622 - BrowserEngine - INFO - The test server url is: https://tsoms2.g-parts.cn
+2020-10-15 22:30:03,352 - BrowserEngine - INFO - Starting Chrome browser.
+2020-10-15 22:30:07,978 - BrowserEngine - INFO - Open url: https://tsoms2.g-parts.cn
+2020-10-15 22:30:08,110 - BrowserEngine - INFO - Maximize the current window.
+2020-10-15 22:30:08,111 - BrowserEngine - INFO - Set implicitly wait 10 seconds.
+2020-10-15 22:30:08,167 - BasePage - INFO - Had find the element '  ' successful by xpath via value: //*[@id="app"]/div/div[2]/div/div/div/form/div[2]/div/div/input 
+2020-10-15 22:30:08,303 - BasePage - INFO - Had type ' dfd ' in inputBox
+2020-10-15 22:30:08,338 - BasePage - INFO - Had find the element '  ' successful by xpath via value: //*[@id="app"]/div/div[2]/div/div/div/form/div[3]/div/div/input 
+2020-10-15 22:30:08,494 - BasePage - INFO - Had type ' 123456 ' in inputBox
+2020-10-15 22:30:08,531 - BasePage - INFO - Had find the element ' 登录 ' successful by xpath via value: /html/body/div[1]/div/div[2]/div/div/div/form/div[5]/div 
+2020-10-15 22:30:08,616 - BasePage - INFO - The element ' 登录 ' was clicked.
+2020-10-15 22:30:10,651 - BasePage - INFO - Had find the element ' 东方店 ' successful by xpath via value: //*[@id="routes"]/div[2]/div[1]/div/div/div[3]/div/a[2] 
+2020-10-15 22:30:10,775 - BasePage - INFO - The element ' 东方店 ' was clicked.
+2020-10-15 22:30:10,841 - BasePage - INFO - Had find the element '  ' successful by xpath via value: /html/body/div[6]/div[2]/div/div/div/header/div/input 
+2020-10-15 22:30:11,052 - BasePage - INFO - Had type ' 测试公司（总部） ' in inputBox
+2020-10-15 22:30:11,088 - BasePage - INFO - Had find the element ' 查询 ' successful by xpath via value: /html/body/div[6]/div[2]/div/div/div/header/button[1] 
+2020-10-15 22:30:11,152 - BasePage - INFO - The element ' 查询 ' was clicked.
+2020-10-15 22:30:13,190 - BasePage - INFO - Had find the element '  ' successful by xpath via value: /html/body/div[6]/div[2]/div/div/div/div/div/div[2]/div[2]/table/tbody/tr/td[1]/div/span 
+2020-10-15 22:30:13,253 - BasePage - INFO - The element '  ' was clicked.
+2020-10-15 22:30:13,287 - BasePage - INFO - Had find the element ' 选择 ' successful by xpath via value: /html/body/div[6]/div[2]/div/div/div/header/button[2] 
+2020-10-15 22:30:13,351 - BasePage - INFO - The element ' 选择 ' was clicked.
+2020-10-15 22:30:18,391 - BasePage - INFO - Had find the element ' 调拨管理 ' successful by xpath via value: //*[@id="leftInner"]/ul/li[4]/div 
+2020-10-15 22:30:18,464 - BasePage - INFO - The element ' 调拨管理 ' was clicked.
+2020-10-15 22:30:18,513 - BasePage - INFO - Had find the element '  ' successful by xpath via value: //*[@id="leftInner"]/ul/li[4]/ul/li[1]/div/div 
+2020-10-15 22:30:18,585 - BasePage - INFO - The element '  ' was clicked.
+2020-10-15 22:30:19,622 - BasePage - INFO - Had find the element ' 调拨申请 ' successful by xpath via value: //*[@id="leftInner"]/ul/li[4]/ul/li[1]/ul/li[1]/div 
+2020-10-15 22:30:19,717 - BasePage - INFO - The element ' 调拨申请 ' was clicked.
+2020-10-15 22:30:22,758 - BasePage - INFO - Had find the element ' 新增 ' successful by xpath via value: //*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[1]/div/div/div[3]/button 
+2020-10-15 22:30:23,011 - BasePage - INFO - The element ' 新增 ' was clicked.
+2020-10-15 22:30:23,065 - BasePage - INFO - Had find the element '  ' successful by xpath via value: //*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div[3]/div/div[2]/form/div[1]/div/div/div[2]/button 
+2020-10-15 22:30:23,214 - BasePage - INFO - The element '  ' was clicked.
+2020-10-15 22:30:25,251 - BasePage - INFO - Had find the element '  ' successful by xpath via value: /html/body/div[32]/div[2]/div/div/div[2]/div[1]/div/input 
+2020-10-15 22:30:25,353 - BasePage - INFO - Had type ' 东方店 ' in inputBox
+2020-10-15 22:30:25,389 - BasePage - INFO - Had find the element ' 查询 ' successful by xpath via value: /html/body/div[32]/div[2]/div/div/div[2]/div[1]/button[1] 
+2020-10-15 22:30:25,469 - BasePage - INFO - The element ' 查询 ' was clicked.
+2020-10-15 22:30:26,507 - BasePage - INFO - Had find the element ' 100068 ' successful by xpath via value: /html/body/div[32]/div[2]/div/div/div[2]/div[2]/div/div/div[1]/div[2]/table/tbody/tr/td[3] 
+2020-10-15 22:30:26,579 - BasePage - INFO - The element ' 100068 ' was clicked.
+2020-10-15 22:30:26,619 - BasePage - INFO - Had find the element ' 选择 ' successful by xpath via value: /html/body/div[32]/div[2]/div/div/div[2]/div[1]/button[2] 
+2020-10-15 22:30:26,734 - BasePage - INFO - The element ' 选择 ' was clicked.
+2020-10-15 22:30:27,781 - BasePage - INFO - Had find the element ' 添加配件 ' successful by xpath via value: //*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div[3]/div/div[3]/div/div[1]/button 
+2020-10-15 22:30:27,993 - BasePage - INFO - The element ' 添加配件 ' was clicked.
+2020-10-15 22:30:29,022 - BasePage - INFO - Had find the element '  ' successful by xpath via value: /html/body/div[19]/div[2]/div/div/div[2]/div[1]/div[2]/div/input 
+2020-10-15 22:30:29,300 - BasePage - INFO - Had type ' 02000034 ' in inputBox
+2020-10-15 22:30:29,335 - BasePage - INFO - Had find the element ' 查询 ' successful by xpath via value: /html/body/div[19]/div[2]/div/div/div[2]/div[1]/button[1] 
+2020-10-15 22:30:29,430 - BasePage - INFO - The element ' 查询 ' was clicked.
+2020-10-15 22:30:36,491 - BasePage - INFO - Had find the element '  ' successful by xpath via value: /html/body/div[19]/div[2]/div/div/div[2]/div[2]/div/div/div[1]/div[2]/table/tbody/tr/td[2]/div/label/span/input 
+2020-10-15 22:30:36,651 - BasePage - INFO - Had find the element '  ' successful by xpath via value: /html/body/div[26]/div[2]/div/div/div[2]/form/div[4]/div[1]/div/div/div/input 
+2020-10-15 22:30:36,773 - BasePage - INFO - Had type ' 1 ' in inputBox
+2020-10-15 22:30:36,846 - BasePage - INFO - Had find the element ' 确定 ' successful by xpath via value: /html/body/div[26]/div[2]/div/div/div[3]/div/button[1] 
+2020-10-15 22:30:37,009 - BasePage - INFO - The element ' 确定 ' was clicked.
+2020-10-15 22:30:38,046 - BasePage - INFO - Had find the element '  ' successful by xpath via value: /html/body/div[19]/div[2]/div/div/a/i 
+2020-10-15 22:30:38,135 - BasePage - INFO - The element '  ' was clicked.
+2020-10-15 22:30:39,181 - BasePage - INFO - Had find the element ' 保存 ' successful by xpath via value: //*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[1]/div/div/div[4]/button 
+2020-10-15 22:30:39,301 - BasePage - INFO - The element ' 保存 ' was clicked.
+2020-10-15 22:30:41,343 - BasePage - INFO - Had find the element ' 编辑收货信息 ' successful by xpath via value: //*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div[3]/div/div[3]/div/div[5]/button 
+2020-10-15 22:30:41,474 - BasePage - INFO - The element ' 编辑收货信息 ' was clicked.
+2020-10-15 22:30:42,514 - BasePage - INFO - Had find the element ' 请选择 ' successful by xpath via value: /html/body/div[31]/div[2]/div/div/div[2]/div/div[2]/div[2]/form/div[6]/div/div/div[1]/div/span 
+2020-10-15 22:30:42,597 - BasePage - INFO - The element ' 请选择 ' was clicked.
+2020-10-15 22:30:42,637 - BasePage - INFO - Had find the element ' 自配 ' successful by xpath via value: /html/body/div[31]/div[2]/div/div/div[2]/div/div[2]/div[2]/form/div[6]/div/div/div[2]/ul[2]/li[1] 
+2020-10-15 22:30:42,752 - BasePage - INFO - The element ' 自配 ' was clicked.
+2020-10-15 22:30:42,826 - BasePage - INFO - Had find the element ' 保存 ' successful by xpath via value: /html/body/div[31]/div[2]/div/div/div[2]/div/div[1]/form/button[2] 
+2020-10-15 22:30:42,910 - BasePage - INFO - The element ' 保存 ' was clicked.
+2020-10-15 22:30:44,948 - BasePage - INFO - Had find the element ' 提交 ' successful by xpath via value: //*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[1]/div/div/div[5]/button 
+2020-10-15 22:30:45,045 - BasePage - INFO - The element ' 提交 ' was clicked.
+2020-10-15 22:30:45,086 - BasePage - INFO - Had find the element ' 确定 ' successful by xpath via value: /html/body/div[36]/div[2]/div/div/div/div/div[3]/button[2] 
+2020-10-15 22:30:45,252 - BasePage - INFO - The element ' 确定 ' was clicked.
+2020-10-15 22:30:49,364 - BasePage - INFO - Had find the element ' 测试公司（总部） ' successful by xpath via value: //*[@id="routes"]/div[2]/div[1]/div/div/div[3]/div/a[2] 
+2020-10-15 22:30:49,453 - BasePage - INFO - The element ' 测试公司（总部） ' was clicked.
+2020-10-15 22:30:49,518 - BasePage - INFO - Had find the element '  ' successful by xpath via value: /html/body/div[6]/div[2]/div/div/div/header/div/input 
+2020-10-15 22:30:49,689 - BasePage - INFO - Had type ' 东方店 ' in inputBox
+2020-10-15 22:30:49,733 - BasePage - INFO - Had find the element ' 查询 ' successful by xpath via value: /html/body/div[6]/div[2]/div/div/div/header/button[1] 
+2020-10-15 22:30:49,811 - BasePage - INFO - The element ' 查询 ' was clicked.
+2020-10-15 22:30:51,844 - BasePage - INFO - Had find the element '  ' successful by xpath via value: /html/body/div[6]/div[2]/div/div/div/div/div/div[2]/div[2]/table/tbody/tr/td[1]/div/span 
+2020-10-15 22:30:51,908 - BasePage - INFO - The element '  ' was clicked.
+2020-10-15 22:30:51,944 - BasePage - INFO - Had find the element ' 选择 ' successful by xpath via value: /html/body/div[6]/div[2]/div/div/div/header/button[2] 
+2020-10-15 22:30:52,011 - BasePage - INFO - The element ' 选择 ' was clicked.
+2020-10-15 22:30:57,058 - BasePage - INFO - Had find the element ' 调拨申请受理 ' successful by xpath via value: //*[@id="leftInner"]/ul/li[4]/ul/li[1]/ul/li[2]/div 
+2020-10-15 22:30:57,155 - BasePage - INFO - The element ' 调拨申请受理 ' was clicked.
+2020-10-15 22:30:59,196 - BasePage - INFO - Had find the element '  ' successful by xpath via value: //*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/div/section[1]/div/div/div[4]/div[2]/input 
+2020-10-15 22:31:00,228 - BasePage - INFO - Had type ' QDDD1000622020101500009 ' in inputBox
+2020-10-15 22:31:00,269 - BasePage - INFO - Had find the element ' 查询 ' successful by xpath via value: //*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/div/section[1]/div/div/div[4]/button 
+2020-10-15 22:31:00,372 - BasePage - INFO - The element ' 查询 ' was clicked.
+2020-10-15 22:31:02,415 - BasePage - INFO - Had find the element ' 受理 ' successful by xpath via value: //*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/div/section[2]/div/div[1]/div/div/div[2]/div[2]/table/tbody/tr/td[2]/div/div/button[1] 
+2020-10-15 22:31:02,501 - BasePage - INFO - The element ' 受理 ' was clicked.
+2020-10-15 22:31:03,533 - BasePage - INFO - Had find the element ' 确定 ' successful by xpath via value: /html/body/div[59]/div[2]/div/div/div/div/div[3]/button[2] 
+2020-10-15 22:31:03,606 - BasePage - INFO - The element ' 确定 ' was clicked.
+2020-10-15 22:31:14,711 - BasePage - INFO - Had find the element ' 调拨出库 ' successful by xpath via value: //*[@id="leftInner"]/ul/li[4]/ul/li[1]/ul/li[3] 
+2020-10-15 22:31:14,809 - BasePage - INFO - The element ' 调拨出库 ' was clicked.
+2020-10-15 22:31:37,142 - BasePage - INFO - Had take screenshot and save to folder : /screenshots
+2020-10-15 22:31:37,173 - BasePage - INFO - Had find the element ' 东方店 ' successful by xpath via value: //*[@id="routes"]/div[2]/div[1]/div/div/div[3]/div/a[2] 
+2020-10-15 22:31:37,258 - BasePage - INFO - The element ' 东方店 ' was clicked.
+2020-10-15 22:31:37,295 - BasePage - INFO - Had find the element '  ' successful by xpath via value: /html/body/div[6]/div[2]/div/div/div/header/div/input 
+2020-10-15 22:31:37,594 - BasePage - INFO - Had type ' 测试公司（总部） ' in inputBox
+2020-10-15 22:31:37,626 - BasePage - INFO - Had find the element ' 查询 ' successful by xpath via value: /html/body/div[6]/div[2]/div/div/div/header/button[1] 
+2020-10-15 22:31:37,697 - BasePage - INFO - The element ' 查询 ' was clicked.
+2020-10-15 22:31:39,729 - BasePage - INFO - Had find the element '  ' successful by xpath via value: /html/body/div[6]/div[2]/div/div/div/div/div/div[2]/div[2]/table/tbody/tr/td[1]/div/span 
+2020-10-15 22:31:39,789 - BasePage - INFO - The element '  ' was clicked.
+2020-10-15 22:31:39,822 - BasePage - INFO - Had find the element ' 选择 ' successful by xpath via value: /html/body/div[6]/div[2]/div/div/div/header/button[2] 
+2020-10-15 22:31:39,883 - BasePage - INFO - The element ' 选择 ' was clicked.
+2020-10-15 22:31:51,506 - BasePage - INFO - Had find the element ' 调拨管理 ' successful by xpath via value: //*[@id="leftInner"]/ul/li[4]/div 
+2020-10-15 22:31:51,573 - BasePage - INFO - The element ' 调拨管理 ' was clicked.
+2020-10-15 22:31:51,621 - BasePage - INFO - Had find the element '  ' successful by xpath via value: //*[@id="leftInner"]/ul/li[4]/ul/li[1]/div/div 
+2020-10-15 22:31:51,695 - BasePage - INFO - The element '  ' was clicked.

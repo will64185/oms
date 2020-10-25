@@ -1,0 +1,540 @@
+1548301804815	geckodriver	INFO	Listening on 127.0.0.1:21712
+1548301807896	mozprofile::profile	INFO	Using profile path C:\Users\will\AppData\Local\Temp\rust_mozprofile.xfPApCkKsC5J
+1548301807918	geckodriver::marionette	INFO	Starting browser D:\工具\火狐\firefox.exe with args []
+1548301808071	geckodriver::marionette	INFO	Connecting to Marionette on localhost:21722
+1548301810317	addons.xpi	WARN	Problem getting last modified time for D:\å·¥å·\ç«ç\browser\features\e10srollout@mozilla.org.xpi: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFile.lastModifiedTime]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: recursiveLastModifiedTime :: line 1847"  data: no] Stack trace: recursiveLastModifiedTime()@resource://gre/modules/addons/XPIProvider.jsm:1847 < getModTime()@resource://gre/modules/addons/XPIProvider.jsm:1995 < syncWithDB()@resource://gre/modules/addons/XPIProvider.jsm:2057 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:2203 < this.XPIProvider.checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3620 < this.XPIProvider.startup()@resource://gre/modules/addons/XPIProvider.jsm:2622 < callProvider()@resource://gre/modules/AddonManager.jsm:227 < _startProvider()@resource://gre/modules/AddonManager.jsm:755 < AddonManagerInternal.startup()@resource://gre/modules/AddonManager.jsm:938 < this.AddonManagerPrivate.startup()@resource://gre/modules/AddonManager.jsm:2773 < amManager.prototype.observe()@resource://gre/components/addonManager.js:57
+1548301810318	addons.xpi	WARN	Can't get modified time of D:\å·¥å·\ç«ç\browser\features\e10srollout@mozilla.org.xpi: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFile.lastModifiedTime]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: getModTime :: line 2021"  data: no] Stack trace: getModTime()@resource://gre/modules/addons/XPIProvider.jsm:2021 < syncWithDB()@resource://gre/modules/addons/XPIProvider.jsm:2057 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:2203 < this.XPIProvider.checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3620 < this.XPIProvider.startup()@resource://gre/modules/addons/XPIProvider.jsm:2622 < callProvider()@resource://gre/modules/AddonManager.jsm:227 < _startProvider()@resource://gre/modules/AddonManager.jsm:755 < AddonManagerInternal.startup()@resource://gre/modules/AddonManager.jsm:938 < this.AddonManagerPrivate.startup()@resource://gre/modules/AddonManager.jsm:2773 < amManager.prototype.observe()@resource://gre/components/addonManager.js:57
+1548301810319	addons.xpi	WARN	Problem getting last modified time for D:\å·¥å·\ç«ç\browser\features\firefox@getpocket.com.xpi: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFile.lastModifiedTime]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: recursiveLastModifiedTime :: line 1847"  data: no] Stack trace: recursiveLastModifiedTime()@resource://gre/modules/addons/XPIProvider.jsm:1847 < getModTime()@resource://gre/modules/addons/XPIProvider.jsm:1995 < syncWithDB()@resource://gre/modules/addons/XPIProvider.jsm:2057 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:2203 < this.XPIProvider.checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3620 < this.XPIProvider.startup()@resource://gre/modules/addons/XPIProvider.jsm:2622 < callProvider()@resource://gre/modules/AddonManager.jsm:227 < _startProvider()@resource://gre/modules/AddonManager.jsm:755 < AddonManagerInternal.startup()@resource://gre/modules/AddonManager.jsm:938 < this.AddonManagerPrivate.startup()@resource://gre/modules/AddonManager.jsm:2773 < amManager.prototype.observe()@resource://gre/components/addonManager.js:57
+1548301810320	addons.xpi	WARN	Can't get modified time of D:\å·¥å·\ç«ç\browser\features\firefox@getpocket.com.xpi: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFile.lastModifiedTime]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: getModTime :: line 2021"  data: no] Stack trace: getModTime()@resource://gre/modules/addons/XPIProvider.jsm:2021 < syncWithDB()@resource://gre/modules/addons/XPIProvider.jsm:2057 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:2203 < this.XPIProvider.checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3620 < this.XPIProvider.startup()@resource://gre/modules/addons/XPIProvider.jsm:2622 < callProvider()@resource://gre/modules/AddonManager.jsm:227 < _startProvider()@resource://gre/modules/AddonManager.jsm:755 < AddonManagerInternal.startup()@resource://gre/modules/AddonManager.jsm:938 < this.AddonManagerPrivate.startup()@resource://gre/modules/AddonManager.jsm:2773 < amManager.prototype.observe()@resource://gre/components/addonManager.js:57
+1548301810321	addons.xpi	WARN	Problem getting last modified time for D:\å·¥å·\ç«ç\browser\features\loop@mozilla.org.xpi: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFile.lastModifiedTime]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: recursiveLastModifiedTime :: line 1847"  data: no] Stack trace: recursiveLastModifiedTime()@resource://gre/modules/addons/XPIProvider.jsm:1847 < getModTime()@resource://gre/modules/addons/XPIProvider.jsm:1995 < syncWithDB()@resource://gre/modules/addons/XPIProvider.jsm:2057 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:2203 < this.XPIProvider.checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3620 < this.XPIProvider.startup()@resource://gre/modules/addons/XPIProvider.jsm:2622 < callProvider()@resource://gre/modules/AddonManager.jsm:227 < _startProvider()@resource://gre/modules/AddonManager.jsm:755 < AddonManagerInternal.startup()@resource://gre/modules/AddonManager.jsm:938 < this.AddonManagerPrivate.startup()@resource://gre/modules/AddonManager.jsm:2773 < amManager.prototype.observe()@resource://gre/components/addonManager.js:57
+1548301810321	addons.xpi	WARN	Can't get modified time of D:\å·¥å·\ç«ç\browser\features\loop@mozilla.org.xpi: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFile.lastModifiedTime]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: getModTime :: line 2021"  data: no] Stack trace: getModTime()@resource://gre/modules/addons/XPIProvider.jsm:2021 < syncWithDB()@resource://gre/modules/addons/XPIProvider.jsm:2057 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:2203 < this.XPIProvider.checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3620 < this.XPIProvider.startup()@resource://gre/modules/addons/XPIProvider.jsm:2622 < callProvider()@resource://gre/modules/AddonManager.jsm:227 < _startProvider()@resource://gre/modules/AddonManager.jsm:755 < AddonManagerInternal.startup()@resource://gre/modules/AddonManager.jsm:938 < this.AddonManagerPrivate.startup()@resource://gre/modules/AddonManager.jsm:2773 < amManager.prototype.observe()@resource://gre/components/addonManager.js:57
+1548301810322	addons.xpi	WARN	Problem getting last modified time for D:\å·¥å·\ç«ç\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFile.lastModifiedTime]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: recursiveLastModifiedTime :: line 1847"  data: no] Stack trace: recursiveLastModifiedTime()@resource://gre/modules/addons/XPIProvider.jsm:1847 < getModTime()@resource://gre/modules/addons/XPIProvider.jsm:1995 < syncWithDB()@resource://gre/modules/addons/XPIProvider.jsm:2057 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:2203 < this.XPIProvider.checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3620 < this.XPIProvider.startup()@resource://gre/modules/addons/XPIProvider.jsm:2622 < callProvider()@resource://gre/modules/AddonManager.jsm:227 < _startProvider()@resource://gre/modules/AddonManager.jsm:755 < AddonManagerInternal.startup()@resource://gre/modules/AddonManager.jsm:938 < this.AddonManagerPrivate.startup()@resource://gre/modules/AddonManager.jsm:2773 < amManager.prototype.observe()@resource://gre/components/addonManager.js:57
+1548301810323	addons.xpi	WARN	Can't get modified time of D:\å·¥å·\ç«ç\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFile.lastModifiedTime]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: getModTime :: line 2021"  data: no] Stack trace: getModTime()@resource://gre/modules/addons/XPIProvider.jsm:2021 < syncWithDB()@resource://gre/modules/addons/XPIProvider.jsm:2057 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:2203 < this.XPIProvider.checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3620 < this.XPIProvider.startup()@resource://gre/modules/addons/XPIProvider.jsm:2622 < callProvider()@resource://gre/modules/AddonManager.jsm:227 < _startProvider()@resource://gre/modules/AddonManager.jsm:755 < AddonManagerInternal.startup()@resource://gre/modules/AddonManager.jsm:938 < this.AddonManagerPrivate.startup()@resource://gre/modules/AddonManager.jsm:2773 < amManager.prototype.observe()@resource://gre/components/addonManager.js:57
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+1548301811393	Marionette	INFO	Listening on port 21722
+JavaScript warning: resource://addoninstaller/log4moz.js, line 494: mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: aAddon._installLocation is undefined
+Full stack: shouldVerifySignedState@resource://gre/modules/addons/XPIProvider.jsm:1617:1
+verifyZipSignedState@resource://gre/modules/addons/XPIProvider.jsm:1648:8
+loadManifestFromZipReader<@resource://gre/modules/addons/XPIProvider.jsm:1381:29
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromZipFile<@resource://gre/modules/addons/XPIProvider.jsm:1406:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromFile@resource://gre/modules/addons/XPIProvider.jsm:1416:12
+AddonInstaller.InstallerService._installExtension/<@resource://addoninstaller/installerService.js:218:41
+AddonInstaller.InstallerService._shouldInstall/<@resource://addoninstaller/installerService.js:311:17
+safeCall@resource://gre/modules/AddonManager.jsm:179:5
+makeSafe/<@resource://gre/modules/AddonManager.jsm:195:25
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:937:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:816:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:750:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: aAddon._installLocation is undefined
+Full stack: shouldVerifySignedState@resource://gre/modules/addons/XPIProvider.jsm:1617:1
+verifyZipSignedState@resource://gre/modules/addons/XPIProvider.jsm:1648:8
+loadManifestFromZipReader<@resource://gre/modules/addons/XPIProvider.jsm:1381:29
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromZipFile<@resource://gre/modules/addons/XPIProvider.jsm:1406:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromFile@resource://gre/modules/addons/XPIProvider.jsm:1416:12
+AddonInstaller.InstallerService._installExtension/<@resource://addoninstaller/installerService.js:218:41
+AddonInstaller.InstallerService._shouldInstall/<@resource://addoninstaller/installerService.js:311:17
+safeCall@resource://gre/modules/AddonManager.jsm:179:5
+makeSafe/<@resource://gre/modules/AddonManager.jsm:195:25
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:937:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:816:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:750:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: aAddon._installLocation is undefined
+Full stack: shouldVerifySignedState@resource://gre/modules/addons/XPIProvider.jsm:1617:1
+verifyZipSignedState@resource://gre/modules/addons/XPIProvider.jsm:1648:8
+loadManifestFromZipReader<@resource://gre/modules/addons/XPIProvider.jsm:1381:29
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromZipFile<@resource://gre/modules/addons/XPIProvider.jsm:1406:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromFile@resource://gre/modules/addons/XPIProvider.jsm:1416:12
+AddonInstaller.InstallerService._installExtension/<@resource://addoninstaller/installerService.js:218:41
+AddonInstaller.InstallerService._shouldInstall/<@resource://addoninstaller/installerService.js:311:17
+safeCall@resource://gre/modules/AddonManager.jsm:179:5
+makeSafe/<@resource://gre/modules/AddonManager.jsm:195:25
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:937:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:816:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:750:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: aAddon._installLocation is undefined
+Full stack: shouldVerifySignedState@resource://gre/modules/addons/XPIProvider.jsm:1617:1
+verifyZipSignedState@resource://gre/modules/addons/XPIProvider.jsm:1648:8
+loadManifestFromZipReader<@resource://gre/modules/addons/XPIProvider.jsm:1381:29
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromZipFile<@resource://gre/modules/addons/XPIProvider.jsm:1406:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromFile@resource://gre/modules/addons/XPIProvider.jsm:1416:12
+AddonInstaller.InstallerService._installExtension/<@resource://addoninstaller/installerService.js:218:41
+AddonInstaller.InstallerService._shouldInstall/<@resource://addoninstaller/installerService.js:311:17
+safeCall@resource://gre/modules/AddonManager.jsm:179:5
+makeSafe/<@resource://gre/modules/AddonManager.jsm:195:25
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:937:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:816:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:750:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: aAddon._installLocation is undefined
+Full stack: shouldVerifySignedState@resource://gre/modules/addons/XPIProvider.jsm:1617:1
+verifyZipSignedState@resource://gre/modules/addons/XPIProvider.jsm:1648:8
+loadManifestFromZipReader<@resource://gre/modules/addons/XPIProvider.jsm:1381:29
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromZipFile<@resource://gre/modules/addons/XPIProvider.jsm:1406:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromFile@resource://gre/modules/addons/XPIProvider.jsm:1416:12
+AddonInstaller.InstallerService._installExtension/<@resource://addoninstaller/installerService.js:218:41
+AddonInstaller.InstallerService._shouldInstall/<@resource://addoninstaller/installerService.js:311:17
+safeCall@resource://gre/modules/AddonManager.jsm:179:5
+makeSafe/<@resource://gre/modules/AddonManager.jsm:195:25
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:937:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:816:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:750:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: aAddon._installLocation is undefined
+Full stack: shouldVerifySignedState@resource://gre/modules/addons/XPIProvider.jsm:1617:1
+verifyZipSignedState@resource://gre/modules/addons/XPIProvider.jsm:1648:8
+loadManifestFromZipReader<@resource://gre/modules/addons/XPIProvider.jsm:1381:29
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromZipFile<@resource://gre/modules/addons/XPIProvider.jsm:1406:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromFile@resource://gre/modules/addons/XPIProvider.jsm:1416:12
+AddonInstaller.InstallerService._installExtension/<@resource://addoninstaller/installerService.js:218:41
+AddonInstaller.InstallerService._shouldInstall/<@resource://addoninstaller/installerService.js:311:17
+safeCall@resource://gre/modules/AddonManager.jsm:179:5
+makeSafe/<@resource://gre/modules/AddonManager.jsm:195:25
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:937:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:816:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:750:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: aAddon._installLocation is undefined
+Full stack: shouldVerifySignedState@resource://gre/modules/addons/XPIProvider.jsm:1617:1
+verifyZipSignedState@resource://gre/modules/addons/XPIProvider.jsm:1648:8
+loadManifestFromZipReader<@resource://gre/modules/addons/XPIProvider.jsm:1381:29
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromZipFile<@resource://gre/modules/addons/XPIProvider.jsm:1406:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromFile@resource://gre/modules/addons/XPIProvider.jsm:1416:12
+AddonInstaller.InstallerService._installExtension/<@resource://addoninstaller/installerService.js:218:41
+AddonInstaller.InstallerService._shouldInstall/<@resource://addoninstaller/installerService.js:311:17
+safeCall@resource://gre/modules/AddonManager.jsm:179:5
+makeSafe/<@resource://gre/modules/AddonManager.jsm:195:25
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:937:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:816:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:750:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: aAddon._installLocation is undefined
+Full stack: shouldVerifySignedState@resource://gre/modules/addons/XPIProvider.jsm:1617:1
+verifyZipSignedState@resource://gre/modules/addons/XPIProvider.jsm:1648:8
+loadManifestFromZipReader<@resource://gre/modules/addons/XPIProvider.jsm:1381:29
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromZipFile<@resource://gre/modules/addons/XPIProvider.jsm:1406:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromFile@resource://gre/modules/addons/XPIProvider.jsm:1416:12
+AddonInstaller.InstallerService._installExtension/<@resource://addoninstaller/installerService.js:218:41
+AddonInstaller.InstallerService._shouldInstall/<@resource://addoninstaller/installerService.js:311:17
+safeCall@resource://gre/modules/AddonManager.jsm:179:5
+makeSafe/<@resource://gre/modules/AddonManager.jsm:195:25
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:937:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:816:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:750:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: aAddon._installLocation is undefined
+Full stack: shouldVerifySignedState@resource://gre/modules/addons/XPIProvider.jsm:1617:1
+verifyZipSignedState@resource://gre/modules/addons/XPIProvider.jsm:1648:8
+loadManifestFromZipReader<@resource://gre/modules/addons/XPIProvider.jsm:1381:29
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromZipFile<@resource://gre/modules/addons/XPIProvider.jsm:1406:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromFile@resource://gre/modules/addons/XPIProvider.jsm:1416:12
+AddonInstaller.InstallerService._installExtension/<@resource://addoninstaller/installerService.js:218:41
+AddonInstaller.InstallerService._shouldInstall/<@resource://addoninstaller/installerService.js:311:17
+safeCall@resource://gre/modules/AddonManager.jsm:179:5
+makeSafe/<@resource://gre/modules/AddonManager.jsm:195:25
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:937:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:816:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:750:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: aAddon._installLocation is undefined
+Full stack: shouldVerifySignedState@resource://gre/modules/addons/XPIProvider.jsm:1617:1
+verifyZipSignedState@resource://gre/modules/addons/XPIProvider.jsm:1648:8
+loadManifestFromZipReader<@resource://gre/modules/addons/XPIProvider.jsm:1381:29
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromZipFile<@resource://gre/modules/addons/XPIProvider.jsm:1406:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromFile@resource://gre/modules/addons/XPIProvider.jsm:1416:12
+AddonInstaller.InstallerService._installExtension/<@resource://addoninstaller/installerService.js:218:41
+AddonInstaller.InstallerService._shouldInstall/<@resource://addoninstaller/installerService.js:311:17
+safeCall@resource://gre/modules/AddonManager.jsm:179:5
+makeSafe/<@resource://gre/modules/AddonManager.jsm:195:25
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:937:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:816:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:750:11
+
+*************************
+JavaScript warning: resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/environment.js, line 15: Proxy.create and Proxy.createFunction are deprecated, use new Proxy instead
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
+console.error: commonfix: 
+  Message: ReferenceError: reason is not defined
+  Stack:
+    exports.onUnload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://commonfix-at-mozillaonline-dot-com/commonfix/lib/main.js:316:1
+unload/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:58:7
+unload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:56:3
+onunload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:77:5
+Observer<.observe@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/events.js:81:7
+unload@resource://gre/modules/commonjs/toolkit/loader.js:795:3
+shutdown@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/will/AppData/Local/Temp/rust_mozprofile.xfPApCkKsC5J/extensions/commonfix@mozillaonline.com.xpi!/bootstrap.js:303:5
+this.XPIProvider.callBootstrapMethod@resource://gre/modules/addons/XPIProvider.jsm:4675:9
+this.XPIProvider.startup/<.observe@resource://gre/modules/addons/XPIProvider.jsm:2715:15
+
+1548301835288	geckodriver	INFO	Listening on 127.0.0.1:21767
+1548301837996	mozprofile::profile	INFO	Using profile path C:\Users\will\AppData\Local\Temp\rust_mozprofile.c3jfzFnOHyZ0
+1548301838023	geckodriver::marionette	INFO	Starting browser D:\工具\火狐\firefox.exe with args []
+1548301838055	geckodriver::marionette	INFO	Connecting to Marionette on localhost:21776
+1548301841131	addons.xpi	WARN	Problem getting last modified time for D:\å·¥å·\ç«ç\browser\features\e10srollout@mozilla.org.xpi: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFile.lastModifiedTime]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: recursiveLastModifiedTime :: line 1847"  data: no] Stack trace: recursiveLastModifiedTime()@resource://gre/modules/addons/XPIProvider.jsm:1847 < getModTime()@resource://gre/modules/addons/XPIProvider.jsm:1995 < syncWithDB()@resource://gre/modules/addons/XPIProvider.jsm:2057 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:2203 < this.XPIProvider.checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3620 < this.XPIProvider.startup()@resource://gre/modules/addons/XPIProvider.jsm:2622 < callProvider()@resource://gre/modules/AddonManager.jsm:227 < _startProvider()@resource://gre/modules/AddonManager.jsm:755 < AddonManagerInternal.startup()@resource://gre/modules/AddonManager.jsm:938 < this.AddonManagerPrivate.startup()@resource://gre/modules/AddonManager.jsm:2773 < amManager.prototype.observe()@resource://gre/components/addonManager.js:57
+1548301841132	addons.xpi	WARN	Can't get modified time of D:\å·¥å·\ç«ç\browser\features\e10srollout@mozilla.org.xpi: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFile.lastModifiedTime]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: getModTime :: line 2021"  data: no] Stack trace: getModTime()@resource://gre/modules/addons/XPIProvider.jsm:2021 < syncWithDB()@resource://gre/modules/addons/XPIProvider.jsm:2057 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:2203 < this.XPIProvider.checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3620 < this.XPIProvider.startup()@resource://gre/modules/addons/XPIProvider.jsm:2622 < callProvider()@resource://gre/modules/AddonManager.jsm:227 < _startProvider()@resource://gre/modules/AddonManager.jsm:755 < AddonManagerInternal.startup()@resource://gre/modules/AddonManager.jsm:938 < this.AddonManagerPrivate.startup()@resource://gre/modules/AddonManager.jsm:2773 < amManager.prototype.observe()@resource://gre/components/addonManager.js:57
+1548301841133	addons.xpi	WARN	Problem getting last modified time for D:\å·¥å·\ç«ç\browser\features\firefox@getpocket.com.xpi: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFile.lastModifiedTime]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: recursiveLastModifiedTime :: line 1847"  data: no] Stack trace: recursiveLastModifiedTime()@resource://gre/modules/addons/XPIProvider.jsm:1847 < getModTime()@resource://gre/modules/addons/XPIProvider.jsm:1995 < syncWithDB()@resource://gre/modules/addons/XPIProvider.jsm:2057 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:2203 < this.XPIProvider.checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3620 < this.XPIProvider.startup()@resource://gre/modules/addons/XPIProvider.jsm:2622 < callProvider()@resource://gre/modules/AddonManager.jsm:227 < _startProvider()@resource://gre/modules/AddonManager.jsm:755 < AddonManagerInternal.startup()@resource://gre/modules/AddonManager.jsm:938 < this.AddonManagerPrivate.startup()@resource://gre/modules/AddonManager.jsm:2773 < amManager.prototype.observe()@resource://gre/components/addonManager.js:57
+1548301841134	addons.xpi	WARN	Can't get modified time of D:\å·¥å·\ç«ç\browser\features\firefox@getpocket.com.xpi: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFile.lastModifiedTime]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: getModTime :: line 2021"  data: no] Stack trace: getModTime()@resource://gre/modules/addons/XPIProvider.jsm:2021 < syncWithDB()@resource://gre/modules/addons/XPIProvider.jsm:2057 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:2203 < this.XPIProvider.checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3620 < this.XPIProvider.startup()@resource://gre/modules/addons/XPIProvider.jsm:2622 < callProvider()@resource://gre/modules/AddonManager.jsm:227 < _startProvider()@resource://gre/modules/AddonManager.jsm:755 < AddonManagerInternal.startup()@resource://gre/modules/AddonManager.jsm:938 < this.AddonManagerPrivate.startup()@resource://gre/modules/AddonManager.jsm:2773 < amManager.prototype.observe()@resource://gre/components/addonManager.js:57
+1548301841134	addons.xpi	WARN	Problem getting last modified time for D:\å·¥å·\ç«ç\browser\features\loop@mozilla.org.xpi: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFile.lastModifiedTime]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: recursiveLastModifiedTime :: line 1847"  data: no] Stack trace: recursiveLastModifiedTime()@resource://gre/modules/addons/XPIProvider.jsm:1847 < getModTime()@resource://gre/modules/addons/XPIProvider.jsm:1995 < syncWithDB()@resource://gre/modules/addons/XPIProvider.jsm:2057 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:2203 < this.XPIProvider.checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3620 < this.XPIProvider.startup()@resource://gre/modules/addons/XPIProvider.jsm:2622 < callProvider()@resource://gre/modules/AddonManager.jsm:227 < _startProvider()@resource://gre/modules/AddonManager.jsm:755 < AddonManagerInternal.startup()@resource://gre/modules/AddonManager.jsm:938 < this.AddonManagerPrivate.startup()@resource://gre/modules/AddonManager.jsm:2773 < amManager.prototype.observe()@resource://gre/components/addonManager.js:57
+1548301841135	addons.xpi	WARN	Can't get modified time of D:\å·¥å·\ç«ç\browser\features\loop@mozilla.org.xpi: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFile.lastModifiedTime]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: getModTime :: line 2021"  data: no] Stack trace: getModTime()@resource://gre/modules/addons/XPIProvider.jsm:2021 < syncWithDB()@resource://gre/modules/addons/XPIProvider.jsm:2057 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:2203 < this.XPIProvider.checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3620 < this.XPIProvider.startup()@resource://gre/modules/addons/XPIProvider.jsm:2622 < callProvider()@resource://gre/modules/AddonManager.jsm:227 < _startProvider()@resource://gre/modules/AddonManager.jsm:755 < AddonManagerInternal.startup()@resource://gre/modules/AddonManager.jsm:938 < this.AddonManagerPrivate.startup()@resource://gre/modules/AddonManager.jsm:2773 < amManager.prototype.observe()@resource://gre/components/addonManager.js:57
+1548301841136	addons.xpi	WARN	Problem getting last modified time for D:\å·¥å·\ç«ç\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFile.lastModifiedTime]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: recursiveLastModifiedTime :: line 1847"  data: no] Stack trace: recursiveLastModifiedTime()@resource://gre/modules/addons/XPIProvider.jsm:1847 < getModTime()@resource://gre/modules/addons/XPIProvider.jsm:1995 < syncWithDB()@resource://gre/modules/addons/XPIProvider.jsm:2057 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:2203 < this.XPIProvider.checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3620 < this.XPIProvider.startup()@resource://gre/modules/addons/XPIProvider.jsm:2622 < callProvider()@resource://gre/modules/AddonManager.jsm:227 < _startProvider()@resource://gre/modules/AddonManager.jsm:755 < AddonManagerInternal.startup()@resource://gre/modules/AddonManager.jsm:938 < this.AddonManagerPrivate.startup()@resource://gre/modules/AddonManager.jsm:2773 < amManager.prototype.observe()@resource://gre/components/addonManager.js:57
+1548301841136	addons.xpi	WARN	Can't get modified time of D:\å·¥å·\ç«ç\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFile.lastModifiedTime]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: getModTime :: line 2021"  data: no] Stack trace: getModTime()@resource://gre/modules/addons/XPIProvider.jsm:2021 < syncWithDB()@resource://gre/modules/addons/XPIProvider.jsm:2057 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:2203 < this.XPIProvider.checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3620 < this.XPIProvider.startup()@resource://gre/modules/addons/XPIProvider.jsm:2622 < callProvider()@resource://gre/modules/AddonManager.jsm:227 < _startProvider()@resource://gre/modules/AddonManager.jsm:755 < AddonManagerInternal.startup()@resource://gre/modules/AddonManager.jsm:938 < this.AddonManagerPrivate.startup()@resource://gre/modules/AddonManager.jsm:2773 < amManager.prototype.observe()@resource://gre/components/addonManager.js:57
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs 0.0.0.0 and 0.0.0.0
+1548301841757	Marionette	INFO	Listening on port 21776
+JavaScript warning: resource://addoninstaller/log4moz.js, line 494: mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: aAddon._installLocation is undefined
+Full stack: shouldVerifySignedState@resource://gre/modules/addons/XPIProvider.jsm:1617:1
+verifyZipSignedState@resource://gre/modules/addons/XPIProvider.jsm:1648:8
+loadManifestFromZipReader<@resource://gre/modules/addons/XPIProvider.jsm:1381:29
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromZipFile<@resource://gre/modules/addons/XPIProvider.jsm:1406:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromFile@resource://gre/modules/addons/XPIProvider.jsm:1416:12
+AddonInstaller.InstallerService._installExtension/<@resource://addoninstaller/installerService.js:218:41
+AddonInstaller.InstallerService._shouldInstall/<@resource://addoninstaller/installerService.js:311:17
+safeCall@resource://gre/modules/AddonManager.jsm:179:5
+makeSafe/<@resource://gre/modules/AddonManager.jsm:195:25
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:937:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:816:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:750:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: aAddon._installLocation is undefined
+Full stack: shouldVerifySignedState@resource://gre/modules/addons/XPIProvider.jsm:1617:1
+verifyZipSignedState@resource://gre/modules/addons/XPIProvider.jsm:1648:8
+loadManifestFromZipReader<@resource://gre/modules/addons/XPIProvider.jsm:1381:29
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromZipFile<@resource://gre/modules/addons/XPIProvider.jsm:1406:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromFile@resource://gre/modules/addons/XPIProvider.jsm:1416:12
+AddonInstaller.InstallerService._installExtension/<@resource://addoninstaller/installerService.js:218:41
+AddonInstaller.InstallerService._shouldInstall/<@resource://addoninstaller/installerService.js:311:17
+safeCall@resource://gre/modules/AddonManager.jsm:179:5
+makeSafe/<@resource://gre/modules/AddonManager.jsm:195:25
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:937:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:816:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:750:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: aAddon._installLocation is undefined
+Full stack: shouldVerifySignedState@resource://gre/modules/addons/XPIProvider.jsm:1617:1
+verifyZipSignedState@resource://gre/modules/addons/XPIProvider.jsm:1648:8
+loadManifestFromZipReader<@resource://gre/modules/addons/XPIProvider.jsm:1381:29
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromZipFile<@resource://gre/modules/addons/XPIProvider.jsm:1406:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromFile@resource://gre/modules/addons/XPIProvider.jsm:1416:12
+AddonInstaller.InstallerService._installExtension/<@resource://addoninstaller/installerService.js:218:41
+AddonInstaller.InstallerService._shouldInstall/<@resource://addoninstaller/installerService.js:311:17
+safeCall@resource://gre/modules/AddonManager.jsm:179:5
+makeSafe/<@resource://gre/modules/AddonManager.jsm:195:25
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:937:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:816:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:750:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: aAddon._installLocation is undefined
+Full stack: shouldVerifySignedState@resource://gre/modules/addons/XPIProvider.jsm:1617:1
+verifyZipSignedState@resource://gre/modules/addons/XPIProvider.jsm:1648:8
+loadManifestFromZipReader<@resource://gre/modules/addons/XPIProvider.jsm:1381:29
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromZipFile<@resource://gre/modules/addons/XPIProvider.jsm:1406:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromFile@resource://gre/modules/addons/XPIProvider.jsm:1416:12
+AddonInstaller.InstallerService._installExtension/<@resource://addoninstaller/installerService.js:218:41
+AddonInstaller.InstallerService._shouldInstall/<@resource://addoninstaller/installerService.js:311:17
+safeCall@resource://gre/modules/AddonManager.jsm:179:5
+makeSafe/<@resource://gre/modules/AddonManager.jsm:195:25
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:937:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:816:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:750:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: aAddon._installLocation is undefined
+Full stack: shouldVerifySignedState@resource://gre/modules/addons/XPIProvider.jsm:1617:1
+verifyZipSignedState@resource://gre/modules/addons/XPIProvider.jsm:1648:8
+loadManifestFromZipReader<@resource://gre/modules/addons/XPIProvider.jsm:1381:29
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromZipFile<@resource://gre/modules/addons/XPIProvider.jsm:1406:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromFile@resource://gre/modules/addons/XPIProvider.jsm:1416:12
+AddonInstaller.InstallerService._installExtension/<@resource://addoninstaller/installerService.js:218:41
+AddonInstaller.InstallerService._shouldInstall/<@resource://addoninstaller/installerService.js:311:17
+safeCall@resource://gre/modules/AddonManager.jsm:179:5
+makeSafe/<@resource://gre/modules/AddonManager.jsm:195:25
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:937:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:816:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:750:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: aAddon._installLocation is undefined
+Full stack: shouldVerifySignedState@resource://gre/modules/addons/XPIProvider.jsm:1617:1
+verifyZipSignedState@resource://gre/modules/addons/XPIProvider.jsm:1648:8
+loadManifestFromZipReader<@resource://gre/modules/addons/XPIProvider.jsm:1381:29
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromZipFile<@resource://gre/modules/addons/XPIProvider.jsm:1406:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromFile@resource://gre/modules/addons/XPIProvider.jsm:1416:12
+AddonInstaller.InstallerService._installExtension/<@resource://addoninstaller/installerService.js:218:41
+AddonInstaller.InstallerService._shouldInstall/<@resource://addoninstaller/installerService.js:311:17
+safeCall@resource://gre/modules/AddonManager.jsm:179:5
+makeSafe/<@resource://gre/modules/AddonManager.jsm:195:25
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:937:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:816:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:750:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: aAddon._installLocation is undefined
+Full stack: shouldVerifySignedState@resource://gre/modules/addons/XPIProvider.jsm:1617:1
+verifyZipSignedState@resource://gre/modules/addons/XPIProvider.jsm:1648:8
+loadManifestFromZipReader<@resource://gre/modules/addons/XPIProvider.jsm:1381:29
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromZipFile<@resource://gre/modules/addons/XPIProvider.jsm:1406:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromFile@resource://gre/modules/addons/XPIProvider.jsm:1416:12
+AddonInstaller.InstallerService._installExtension/<@resource://addoninstaller/installerService.js:218:41
+AddonInstaller.InstallerService._shouldInstall/<@resource://addoninstaller/installerService.js:311:17
+safeCall@resource://gre/modules/AddonManager.jsm:179:5
+makeSafe/<@resource://gre/modules/AddonManager.jsm:195:25
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:937:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:816:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:750:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: aAddon._installLocation is undefined
+Full stack: shouldVerifySignedState@resource://gre/modules/addons/XPIProvider.jsm:1617:1
+verifyZipSignedState@resource://gre/modules/addons/XPIProvider.jsm:1648:8
+loadManifestFromZipReader<@resource://gre/modules/addons/XPIProvider.jsm:1381:29
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromZipFile<@resource://gre/modules/addons/XPIProvider.jsm:1406:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromFile@resource://gre/modules/addons/XPIProvider.jsm:1416:12
+AddonInstaller.InstallerService._installExtension/<@resource://addoninstaller/installerService.js:218:41
+AddonInstaller.InstallerService._shouldInstall/<@resource://addoninstaller/installerService.js:311:17
+safeCall@resource://gre/modules/AddonManager.jsm:179:5
+makeSafe/<@resource://gre/modules/AddonManager.jsm:195:25
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:937:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:816:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:750:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: aAddon._installLocation is undefined
+Full stack: shouldVerifySignedState@resource://gre/modules/addons/XPIProvider.jsm:1617:1
+verifyZipSignedState@resource://gre/modules/addons/XPIProvider.jsm:1648:8
+loadManifestFromZipReader<@resource://gre/modules/addons/XPIProvider.jsm:1381:29
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromZipFile<@resource://gre/modules/addons/XPIProvider.jsm:1406:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromFile@resource://gre/modules/addons/XPIProvider.jsm:1416:12
+AddonInstaller.InstallerService._installExtension/<@resource://addoninstaller/installerService.js:218:41
+AddonInstaller.InstallerService._shouldInstall/<@resource://addoninstaller/installerService.js:311:17
+safeCall@resource://gre/modules/AddonManager.jsm:179:5
+makeSafe/<@resource://gre/modules/AddonManager.jsm:195:25
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:937:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:816:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:750:11
+
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: aAddon._installLocation is undefined
+Full stack: shouldVerifySignedState@resource://gre/modules/addons/XPIProvider.jsm:1617:1
+verifyZipSignedState@resource://gre/modules/addons/XPIProvider.jsm:1648:8
+loadManifestFromZipReader<@resource://gre/modules/addons/XPIProvider.jsm:1381:29
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromZipFile<@resource://gre/modules/addons/XPIProvider.jsm:1406:26
+TaskImpl_run@resource://gre/modules/Task.jsm:319:40
+TaskImpl@resource://gre/modules/Task.jsm:280:3
+createAsyncFunction/asyncFunction@resource://gre/modules/Task.jsm:254:14
+loadManifestFromFile@resource://gre/modules/addons/XPIProvider.jsm:1416:12
+AddonInstaller.InstallerService._installExtension/<@resource://addoninstaller/installerService.js:218:41
+AddonInstaller.InstallerService._shouldInstall/<@resource://addoninstaller/installerService.js:311:17
+safeCall@resource://gre/modules/AddonManager.jsm:179:5
+makeSafe/<@resource://gre/modules/AddonManager.jsm:195:25
+Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:937:23
+this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:816:7
+this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:750:11
+
+*************************
+JavaScript warning: resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/environment.js, line 15: Proxy.create and Proxy.createFunction are deprecated, use new Proxy instead
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
+console.error: commonfix: 
+  Message: ReferenceError: reason is not defined
+  Stack:
+    exports.onUnload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://commonfix-at-mozillaonline-dot-com/commonfix/lib/main.js:316:1
+unload/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:58:7
+unload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:56:3
+onunload@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/unload.js:77:5
+Observer<.observe@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/system/events.js:81:7
+unload@resource://gre/modules/commonjs/toolkit/loader.js:795:3
+shutdown@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/will/AppData/Local/Temp/rust_mozprofile.c3jfzFnOHyZ0/extensions/commonfix@mozillaonline.com.xpi!/bootstrap.js:303:5
+this.XPIProvider.callBootstrapMethod@resource://gre/modules/addons/XPIProvider.jsm:4675:9
+this.XPIProvider.startup/<.observe@resource://gre/modules/addons/XPIProvider.jsm:2715:15
+

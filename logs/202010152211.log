@@ -1,0 +1,14 @@
+2020-10-15 22:11:26,316 - BrowserEngine - INFO - You had select Chrome browser.
+2020-10-15 22:11:26,316 - BrowserEngine - INFO - The test server url is: https://tsoms2.g-parts.cn
+2020-10-15 22:11:28,109 - BrowserEngine - INFO - Starting Chrome browser.
+2020-10-15 22:11:30,132 - BrowserEngine - INFO - Open url: https://tsoms2.g-parts.cn
+2020-10-15 22:11:30,367 - BrowserEngine - INFO - Maximize the current window.
+2020-10-15 22:11:30,369 - BrowserEngine - INFO - Set implicitly wait 10 seconds.
+2020-10-15 22:11:30,429 - BasePage - INFO - Had find the element '  ' successful by xpath via value: //*[@id="app"]/div/div[2]/div/div/div/form/div[2]/div/div/input 
+2020-10-15 22:11:30,566 - BasePage - INFO - Had type ' dfd ' in inputBox
+2020-10-15 22:11:30,606 - BasePage - INFO - Had find the element '  ' successful by xpath via value: //*[@id="app"]/div/div[2]/div/div/div/form/div[3]/div/div/input 
+2020-10-15 22:11:30,801 - BasePage - INFO - Had type ' 123456 ' in inputBox
+2020-10-15 22:11:30,847 - BasePage - INFO - Had find the element ' 登录 ' successful by xpath via value: /html/body/div[1]/div/div[2]/div/div/div/form/div[5]/div 
+2020-10-15 22:11:30,947 - BasePage - INFO - The element ' 登录 ' was clicked.
+2020-10-15 22:11:32,078 - BasePage - INFO - Had find the element ' 调拨管理 ' successful by xpath via value: //*[@id="leftInner"]/ul/li[4]/div 
+2020-10-15 22:11:32,182 - BasePage - INFO - The element ' 调拨管理 ' was clicked.
