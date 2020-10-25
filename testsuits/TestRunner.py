@@ -8,6 +8,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.header import Header
 import smtplib
+from threading import Thread
 
 # =============发送邮件===================================
 
@@ -63,6 +64,7 @@ if __name__ == '__main__':
     fp = open(HtmlFile, "wb")
     suite = unittest.TestLoader().discover("testsuits")
     # 执行用例
+
 
     runner = HTMLTestReportCN.HTMLTestRunner(stream=fp, title="极配OMS回归测试报告", description="用例测试情况")
     runner.run(suite)

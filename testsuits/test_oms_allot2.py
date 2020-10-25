@@ -14,16 +14,19 @@ config = configparser.ConfigParser()
 file_path = os.path.dirname(os.path.abspath('.')) + '/config/config.ini'
 config.read(file_path)
 
+
 class MdaoZ(unittest.TestCase):
-    '''门店向总部调拨，紧俏品,有可售数量'''
+    """门店向总部调拨，紧俏品,有可售数量"""
 
     @classmethod
     def setUpClass(cls):
         browse = BrowserEngine(cls)
         cls.driver = browse.open_browser(cls)
 
+    @classmethod
+    def tearDownClass(cls):
 
-
+        cls.driver.quit()
 
     def test_oms_allot1(self):
         '''门店向总部调拨，wms全部发货'''
@@ -148,7 +151,8 @@ class MdaoZ(unittest.TestCase):
             assert zhanyong == 5
             print("4.受理前配件" + SKU1 + "的可售库存为" + dbfksSKu, ",受理后配件" + SKU1 + "的可售库存为" + dbslhkc, '占用库存为:5')
         except Exception as e:
-            print('4.库存占用失败！！！' + SKU1 + "的可售库存为" + dbfksSKu, ",受理后配件" + SKU1 + "的可售库存为" + dbslhkc, '占用库存为:5', format(e))
+            print('4.库存占用失败！！！' + SKU1 + "的可售库存为" + dbfksSKu, ",受理后配件" + SKU1 + "的可售库存为" + dbslhkc, '占用库存为:5',
+                  format(e))
             homepage.get_windows_img()
         a = config.get("testWms", "wms")
         js = "window.open(" + '"' + a + '"' + ")"  # 打开wms

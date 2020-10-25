@@ -6,7 +6,6 @@ from pageobjects.jp_homepage import HomePage
 import configparser
 import os.path
 
-
 SKU1 = '02000034'  # 非紧俏品
 qhgs = '测试公司（总部）'
 qhmd = '东方店'
@@ -17,6 +16,7 @@ config = configparser.ConfigParser()
 file_path = os.path.dirname(os.path.abspath('.')) + '/config/config.ini'
 config.read(file_path)
 
+
 class MdaoZ(unittest.TestCase):
     '''门店向总部调拨，非紧俏品'''
 
@@ -25,9 +25,10 @@ class MdaoZ(unittest.TestCase):
         browse = BrowserEngine(cls)
         cls.driver = browse.open_browser(cls)
 
+    @classmethod
+    def tearDownClass(cls):
 
-
-
+        cls.driver.quit()
 
     def test_oms_allot1(self):
         '''门店向总部调拨，wms部分发货'''
@@ -44,6 +45,7 @@ class MdaoZ(unittest.TestCase):
         homepage.dbapply()  # 点击调拨申请
         time.sleep(3)
         homepage.dbadd()  # 点击新增
+        time.sleep(1)
         homepage.dbdiaochuf()  # 点击选择调出方
         time.sleep(2)
         homepage.dbshurudcf(qhgs)  # 输入调出方
@@ -109,7 +111,8 @@ class MdaoZ(unittest.TestCase):
         time.sleep(2)
         homepage.dbckmore()  # 点击更多查询
         time.sleep(2)
-        self.driver.find_element_by_xpath('/html/body/div[34]/div[2]/div/div/div[2]/form/div/div[5]/div/input').send_keys(dbdh) # 输入申请单号
+        self.driver.find_element_by_xpath(
+            '/html/body/div[34]/div[2]/div/div/div[2]/form/div/div[5]/div/input').send_keys(dbdh)  # 输入申请单号
         self.driver.find_element_by_xpath('/html/body/div[34]/div[2]/div/div/div[3]/div/button[1]').click()  # 点击确认
         dbchuStatus = self.driver.find_element_by_xpath('//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div['
                                                         '1]/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div['
@@ -179,7 +182,8 @@ class MdaoZ(unittest.TestCase):
         self.driver.find_element_by_xpath('//*[@id="leftInner"]/ul/li[6]/ul/li[5]/div').click()
         time.sleep(1)
         self.driver.find_element_by_xpath('//*[@id="right-content"]/div/section/div[2]/div/div/div[1]/div/span').click()
-        self.driver.find_element_by_xpath('//*[@id="right-content"]/div/section/div[2]/div/div/div[2]/ul[2]/li[2]').click()  # 设置默认仓
+        self.driver.find_element_by_xpath(
+            '//*[@id="right-content"]/div/section/div[2]/div/div/div[2]/ul[2]/li[2]').click()  # 设置默认仓
         time.sleep(1)
         self.driver.find_element_by_xpath('//*[@id="leftInner"]/ul/li[3]/div/div/span[2]').click()  # 点击出库管理
         time.sleep(1)
@@ -238,8 +242,10 @@ class MdaoZ(unittest.TestCase):
         time.sleep(3)
         self.driver.find_element_by_xpath('//*[@id="leftInner"]/ul/li[3]/ul/li[4]/div').click()  # 点击发货管理
         time.sleep(2)
-        self.driver.find_element_by_xpath('//*[@id="right-content"]/div/section[1]/div/div/div[1]/div/div[1]/div/span').click()
-        self.driver.find_element_by_xpath('//*[@id="right-content"]/div/section[1]/div/div/div[1]/div/div[2]/ul[2]/li[2]').click()
+        self.driver.find_element_by_xpath(
+            '//*[@id="right-content"]/div/section[1]/div/div/div[1]/div/div[1]/div/span').click()
+        self.driver.find_element_by_xpath(
+            '//*[@id="right-content"]/div/section[1]/div/div/div[1]/div/div[2]/ul[2]/li[2]').click()
         time.sleep(5)
         self.driver.find_element_by_xpath(
             '//*[@id="right-content"]/div/section[2]/div/div/div[2]/table/tbody/tr/td[3]/div/div/span[1]').click()  # 点击发运
@@ -285,7 +291,7 @@ class MdaoZ(unittest.TestCase):
             homepage.get_windows_img()
 
     def test_oms_allot2(self):
-        '''门店向总部调拨，wms再次出库'''
+        """门店向总部调拨，wms再次出库"""
         homepage = HomePage(self.driver)
         self.driver.find_element_by_xpath('//*[@id="leftInner"]/ul/li[5]/ul/li[1]/div').click()  # 点击库存查询
         time.sleep(2)
@@ -298,15 +304,20 @@ class MdaoZ(unittest.TestCase):
         window = self.driver.window_handles
         self.driver.switch_to.window(window[-1])
         time.sleep(3)
-        chukudanhao = self.driver.find_element_by_xpath('//*[@id="right-content"]/div/section[2]/div/div/div[2]/table/tbody/tr/td[3]/div/a').text  # 获取出库单号
-        yewudanhao  = self.driver.find_element_by_xpath('//*[@id="right-content"]/div/section[2]/div/div/div[2]/table/tbody/tr/td[13]/div/span').text  # 获取业务单号
+        chukudanhao = self.driver.find_element_by_xpath(
+            '//*[@id="right-content"]/div/section[2]/div/div/div[2]/table/tbody/tr/td[3]/div/a').text  # 获取出库单号
+        yewudanhao = self.driver.find_element_by_xpath(
+            '//*[@id="right-content"]/div/section[2]/div/div/div[2]/table/tbody/tr/td[13]/div/span').text  # 获取业务单号
         self.driver.find_element_by_xpath('//*[@id="leftInner"]/ul/li[3]/ul/li[6]/div').click()  # 点击出库差异
         time.sleep(1)
 
-        self.driver.find_element_by_xpath('//*[@id="right-content"]/div/section[1]/div/div/div[4]/div[2]/input').send_keys(chukudanhao)  # 输入出库单号查询
-        self.driver.find_element_by_xpath('//*[@id="right-content"]/div/section[1]/div/div/div[4]/button').click()  # 点击查询
+        self.driver.find_element_by_xpath(
+            '//*[@id="right-content"]/div/section[1]/div/div/div[4]/div[2]/input').send_keys(chukudanhao)  # 输入出库单号查询
+        self.driver.find_element_by_xpath(
+            '//*[@id="right-content"]/div/section[1]/div/div/div[4]/button').click()  # 点击查询
         time.sleep(1)
-        self.driver.find_element_by_xpath('//*[@id="right-content"]/div/section[2]/div/div/div[2]/table/tbody/tr/td[2]/div/span/span[2]').click()  # 再次出库
+        self.driver.find_element_by_xpath(
+            '//*[@id="right-content"]/div/section[2]/div/div/div[2]/table/tbody/tr/td[2]/div/span/span[2]').click()  # 再次出库
         self.driver.find_element_by_xpath('/html/body/div[10]/div[2]/div/div/div/div/div[3]/button[2]').click()  # 点击确定
         time.sleep(2)
         self.driver.refresh()
@@ -327,7 +338,8 @@ class MdaoZ(unittest.TestCase):
             '//*[@id="right-content"]/div/section[1]/div[1]/div/div[7]/div[1]/div[2]/ul[2]/li[3]').click()  # 选择业务单号
         self.driver.find_element_by_xpath(
             '//*[@id="right-content"]/div/section[1]/div[1]/div/div[7]/div[2]/input').send_keys(yewudanhao)
-        self.driver.find_element_by_xpath('//*[@id="right-content"]/div/section[1]/div[1]/div/div[7]/button').click()  # 点击查询
+        self.driver.find_element_by_xpath(
+            '//*[@id="right-content"]/div/section[1]/div[1]/div/div[7]/button').click()  # 点击查询
         time.sleep(2)
         self.driver.find_element_by_xpath(
             '//*[@id="right-content"]/div/section[2]/div/div/div[2]/table/tbody/tr/td[2]/div/span/span[2]').click()  # 点击分拣清单
@@ -416,14 +428,15 @@ class MdaoZ(unittest.TestCase):
             homepage.get_windows_img()
 
     def test_oms_allot3(self):
-        '''门店向总部调拨，wms确认差异'''
+        """门店向总部调拨，wms确认差异"""
         homepage = HomePage(self.driver)
         self.driver.find_element_by_xpath('//*[@id="leftInner"]/ul/li[5]/ul/li[1]/div').click()  # 点击库存查询
         time.sleep(2)
         self.driver.find_element_by_xpath('//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/section/div[2]/div['
                                           '1]/div/button[1]').click()  # 点击查询
         time.sleep(5)
-        keshouNum = self.driver.find_element_by_xpath('//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/section/div[2]/div[2]/div[2]/div[2]/table/tbody/tr/td[11]/div').text
+        keshouNum = self.driver.find_element_by_xpath(
+            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/section/div[2]/div[2]/div[2]/div[2]/table/tbody/tr/td[11]/div').text
         window = self.driver.window_handles
         self.driver.switch_to.window(window[-1])
         time.sleep(3)
@@ -437,7 +450,8 @@ class MdaoZ(unittest.TestCase):
         self.driver.find_element_by_xpath(
             '//*[@id="right-content"]/div/section[1]/div/div/div[4]/button').click()  # 点击查询
         time.sleep(1)
-        self.driver.find_element_by_xpath('//*[@id="right-content"]/div/section[2]/div/div/div[2]/table/tbody/tr/td[2]/div/span/span[1]').click()
+        self.driver.find_element_by_xpath(
+            '//*[@id="right-content"]/div/section[2]/div/div/div[2]/table/tbody/tr/td[2]/div/span/span[1]').click()
         time.sleep(4)
         self.driver.find_element_by_xpath('/html/body/div[10]/div[2]/div/div/div/div/div[3]/button[2]').click()
         time.sleep(2)
@@ -462,16 +476,12 @@ class MdaoZ(unittest.TestCase):
         chayi = int(cyhkeshouNum) - int(keshouNum)
         try:
             assert chayi == 1 and '已完成' in a
-            print('2.WMS回传oms成功，确认差异前配件' + SKU1, '的可售库存为' + keshouNum, '，确认差异后配件' + SKU1, '可售库存为' + cyhkeshouNum, '差异数量为：1')
+            print('2.WMS回传oms成功，确认差异前配件' + SKU1, '的可售库存为' + keshouNum, '，确认差异后配件' + SKU1, '可售库存为' + cyhkeshouNum,
+                  '差异数量为：1')
         except Exception as e:
-            print('2.WMS回传oms失败，确认差异前配件' + SKU1, '的可售库存为' + keshouNum, '，确认差异后配件' + SKU1, '可售库存为' + cyhkeshouNum, '差异数量为：1', format(e))
+            print('2.WMS回传oms失败，确认差异前配件' + SKU1, '的可售库存为' + keshouNum, '，确认差异后配件' + SKU1, '可售库存为' + cyhkeshouNum,
+                  '差异数量为：1', format(e))
             homepage.get_windows_img()
-
-
-
-
-
-
 
 
 if __name__ == '__main__':

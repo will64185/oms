@@ -25,6 +25,11 @@ class ZdaoM(unittest.TestCase):
         browse = BrowserEngine(cls)
         cls.driver = browse.open_browser(cls)
 
+    @classmethod
+    def tearDownClass(cls):
+
+        cls.driver.quit()
+
     def test_oms_allot1(self):
         """总部向门店调拨"""
 
@@ -61,7 +66,7 @@ class ZdaoM(unittest.TestCase):
         homepage.dbchaxuanpeij()  # 点击查询
         time.sleep(7)
         dbfksSKu = self.driver.find_element_by_xpath(
-            '/html/body/div[19]/div[2]/div/div/div[2]/div[2]/div/div/div[1]/div[2]/table/tbody/tr/td[10]/div/span').\
+            '/html/body/div[19]/div[2]/div/div/div[2]/div[2]/div/div/div[1]/div[2]/table/tbody/tr/td[10]/div/span'). \
             text  # 取调出方受理前的库存
         homepage.doublec()  # 双击配件
         homepage.dbshurushul(dbsqnum)  # 输入数量1
@@ -104,7 +109,7 @@ class ZdaoM(unittest.TestCase):
         time.sleep(2)
         homepage.dbsqdhsearch(dbdh)  # 输入申请单号
         homepage.dbsqdhchaxun()  # 点击查询
-        time.sleep(2)
+        time.sleep(1)
         homepage.dbsqslbutton()  # 点击受理
         time.sleep(1)
         homepage.dbsqslsure()  # 点击确定
@@ -117,7 +122,8 @@ class ZdaoM(unittest.TestCase):
         self.driver.find_element_by_xpath(
             '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/section/div[2]/div[1]/div/div[3]/input').send_keys(
             SKU1)  # 输入内码查询
-        self.driver.find_element_by_xpath('//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/section/div[2]/div[1]/div/label/span/input').click()
+        self.driver.find_element_by_xpath(
+            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/section/div[2]/div[1]/div/label/span/input').click()
         self.driver.find_element_by_xpath(
             '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/section/div[2]/div[1]/div/button[1]').click()  # 点击查询
         time.sleep(5)
@@ -151,9 +157,10 @@ class ZdaoM(unittest.TestCase):
         dbsld = self.driver.find_element_by_xpath('//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div['
                                                   '1]/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div['
                                                   '2]/table/tbody/tr/td[6]/div/span').text
-        print(dbsld+'，'+dbchuStatus)
+        print(dbsld + '，' + dbchuStatus)
 
-        self.driver.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div[2]/table/tbody/tr/td[3]/div/span').click()  # 点击要出库的调拨出库单
+        self.driver.find_element_by_xpath(
+            '/html/body/div[1]/div/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div[2]/table/tbody/tr/td[3]/div/span').click()  # 点击要出库的调拨出库单
 
         self.driver.find_element_by_xpath(
             '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[1]/div/div/div[5]/button').click()  # 点击提交
@@ -165,7 +172,8 @@ class ZdaoM(unittest.TestCase):
         time.sleep(1)
         self.driver.find_element_by_xpath('/html/body/div[90]/div[2]/div/div/div/div/div[3]/button[2]').click()
         time.sleep(2)
-        status = self.driver.find_element_by_xpath('//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[2]/div/span').text
+        status = self.driver.find_element_by_xpath(
+            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[2]/div/span').text
         self.driver.find_element_by_xpath('//*[@id="leftInner"]/ul/li[5]/ul/li[1]/div').click()  # 点击库存查询
         time.sleep(2)
         self.driver.find_element_by_xpath(
@@ -196,9 +204,7 @@ class ZdaoM(unittest.TestCase):
         self.driver.find_element_by_xpath(
             '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/section/div[2]/div[1]/div/button[1]').click()  # 点击查询
         time.sleep(5)
-        dbslhkc = self.driver.find_element_by_xpath(
-            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/section/div[2]/div[2]/div[2]/div['
-            '2]/table/tbody/tr/td[11]/div').text  # 配件可售库存
+
         thrukuq = self.driver.find_element_by_xpath(
             '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/section/div[2]/div[2]/div[2]/div['
             '2]/table/tbody/tr/td[10]/div/span').text  # 配件库存
@@ -223,7 +229,8 @@ class ZdaoM(unittest.TestCase):
             '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[1]/div/div/div[5]/button').click()  # 点击入库
         self.driver.find_element_by_xpath('/html/body/div[40]/div[2]/div/div/div/div/div[3]/button[2]').click()
         time.sleep(4)
-        dcthrkd = self.driver.find_element_by_xpath('//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div[2]/table/tbody/tr/td[6]/div/span').text
+        dcthrkd = self.driver.find_element_by_xpath(
+            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div[2]/table/tbody/tr/td[6]/div/span').text
         a = config.get("testWms", "wms")
         js = "window.open(" + '"' + a + '"' + ")"  # 打开wms
         self.driver.execute_script(js)
@@ -301,8 +308,10 @@ class ZdaoM(unittest.TestCase):
                 self.driver.find_element_by_xpath(
                     '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[1]/div/div/div[2]/button').click()  # 点击更多查询
                 time.sleep(1)
-                self.driver.find_element_by_xpath('/html/body/div[20]/div[2]/div/div/div[2]/form/div/div[4]/div/input').send_keys(dcthrkd)
-                self.driver.find_element_by_xpath('/html/body/div[20]/div[2]/div/div/div[3]/div/button[1]').click()  # 点击确定
+                self.driver.find_element_by_xpath(
+                    '/html/body/div[20]/div[2]/div/div/div[2]/form/div/div[4]/div/input').send_keys(dcthrkd)
+                self.driver.find_element_by_xpath(
+                    '/html/body/div[20]/div[2]/div/div/div[3]/div/button[1]').click()  # 点击确定
                 time.sleep(2)
                 a = self.driver.find_element_by_xpath(
                     '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div[2]/table/tbody/tr/td[2]/div/span').text
@@ -343,13 +352,19 @@ class ZdaoM(unittest.TestCase):
         self.driver.find_element_by_xpath(
             '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div[3]/div/div[2]/form/div[1]/div/div/div[2]/button').click()  # 选择调出方
         time.sleep(2)
+        shuru_results = self.driver.find_elements_by_xpath('//input[@class="el-input__inner"]')
+        # print(shuru_results)
+        shuru_results[1].send_keys(qhmd)
+        # self.driver.find_element_by_xpath('//input[@class="el-input__inner"]').send_keys(qhmd)  # 输入调出方
+        time.sleep(2)
 
-        self.driver.find_element_by_xpath('//input[@class="el-input__inner"]').send_keys(
-            qhmd)  # 输入调出方
+        chaxun_results = self.driver.find_elements_by_xpath('//*[@class="mr10 ivu-btn ivu-btn-primary"]')
+        # print(chaxun_results)
+        chaxun_results[4].click()
+        # self.driver.find_elements_by_xpath('//*[@class="mr10 ivu-btn ivu-btn-primary"]').click()  # 点击查询
+
         time.sleep(2)
-        self.driver.find_element_by_xpath('//*[@class="mr10 ivu-btn ivu-btn-primary"]').click()  # 点击查询
-        time.sleep(2)
-        homepage.doubledcf()
+        homepage.doubledcfe()
         time.sleep(2)
         self.driver.find_element_by_xpath(
             '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div[3]/div/div[3]/div/div[1]/button').click()  # 添加配件
@@ -420,15 +435,22 @@ class ZdaoM(unittest.TestCase):
         time.sleep(1)
         self.driver.find_element_by_xpath('//*[@id="leftInner"]/ul/li[3]/ul/li[7]/div').click()  # 点击其他出库
         time.sleep(1)
-        self.driver.find_element_by_xpath('//*[@id="right-content"]/div/section[1]/div[1]/div/div[4]/div/div[1]/div/span').click()  # 点击订单类型
+        self.driver.find_element_by_xpath(
+            '//*[@id="right-content"]/div/section[1]/div[1]/div/div[4]/div/div[1]/div/span').click()  # 点击订单类型
         time.sleep(1)
-        self.driver.find_element_by_xpath('//*[@id="right-content"]/div/section[1]/div[1]/div/div[4]/div/div[2]/ul[2]/li[3]').click()  # 订单类型选择调入退回
-        self.driver.find_element_by_xpath('//*[@id="right-content"]/div/section[1]/div[1]/div/div[6]/div[1]/div[1]/div/span').click()  # 选择查询条件
-        self.driver.find_element_by_xpath('//*[@id="right-content"]/div/section[1]/div[1]/div/div[6]/div[1]/div[2]/ul[2]/li[3]').click()  # 选择业务单号
-        self.driver.find_element_by_xpath('//*[@id="right-content"]/div/section[1]/div[1]/div/div[6]/div[2]/input').send_keys(drthsqd)  # 输入业务单号
-        self.driver.find_element_by_xpath('//*[@id="right-content"]/div/section[1]/div[1]/div/div[6]/button[1]').click()  # 点击查询
+        self.driver.find_element_by_xpath(
+            '//*[@id="right-content"]/div/section[1]/div[1]/div/div[4]/div/div[2]/ul[2]/li[3]').click()  # 订单类型选择调入退回
+        self.driver.find_element_by_xpath(
+            '//*[@id="right-content"]/div/section[1]/div[1]/div/div[6]/div[1]/div[1]/div/span').click()  # 选择查询条件
+        self.driver.find_element_by_xpath(
+            '//*[@id="right-content"]/div/section[1]/div[1]/div/div[6]/div[1]/div[2]/ul[2]/li[3]').click()  # 选择业务单号
+        self.driver.find_element_by_xpath(
+            '//*[@id="right-content"]/div/section[1]/div[1]/div/div[6]/div[2]/input').send_keys(drthsqd)  # 输入业务单号
+        self.driver.find_element_by_xpath(
+            '//*[@id="right-content"]/div/section[1]/div[1]/div/div[6]/button[1]').click()  # 点击查询
         time.sleep(2)
-        self.driver.find_element_by_xpath('//*[@id="right-content"]/div/section[2]/div/div/div[2]/table/tbody/tr/td[2]/div/a').click()  # 点击出库单号
+        self.driver.find_element_by_xpath(
+            '//*[@id="right-content"]/div/section[2]/div/div/div[2]/table/tbody/tr/td[2]/div/a').click()  # 点击出库单号
         time.sleep(2)
         self.driver.find_element_by_xpath('//*[@id="right-content"]/div/section[1]/div[2]/button').click()  # 点击确认出库
         time.sleep(1)
@@ -460,8 +482,10 @@ class ZdaoM(unittest.TestCase):
                 self.driver.find_element_by_xpath(
                     '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[1]/div/div/div[2]/button').click()  # 点击更多查询
                 time.sleep(1)
-                self.driver.find_element_by_xpath('/html/body/div[9]/div[2]/div/div/div[2]/form/div/div[4]/div/input').send_keys(drthsqd)
-                self.driver.find_element_by_xpath('/html/body/div[9]/div[2]/div/div/div[3]/div/button[1]').click()  # 点击确定
+                self.driver.find_element_by_xpath(
+                    '/html/body/div[9]/div[2]/div/div/div[2]/form/div/div[4]/div/input').send_keys(drthsqd)
+                self.driver.find_element_by_xpath(
+                    '/html/body/div[9]/div[2]/div/div/div[3]/div/button[1]').click()  # 点击确定
                 time.sleep(2)
                 a = self.driver.find_element_by_xpath(
                     '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div[2]/table/tbody/tr/td[2]/div/span').text
@@ -515,15 +539,35 @@ class ZdaoM(unittest.TestCase):
         time.sleep(1)
         self.driver.find_element_by_xpath('//*[@id="leftInner"]/ul/li[4]/ul/li[2]/ul/li[2]/div').click()  # 点击调出退回入库
         time.sleep(2)
-        self.driver.find_element_by_xpath('//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/div/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[1]/div/span').click()  # 选择入库单据
-        self.driver.find_element_by_xpath('//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/div/section[1]/div/div/div[3]/button').click()  # 点击入库
+        self.driver.find_element_by_xpath(
+            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/div/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[1]/div/span').click()  # 选择入库单据
+        self.driver.find_element_by_xpath(
+            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/div/section[1]/div/div/div[3]/button').click()  # 点击入库
         self.driver.find_element_by_xpath('/html/body/div[22]/div[2]/div/div/div[3]/button[2]').click()  # 点击确定
         time.sleep(4)
         self.driver.refresh()
         time.sleep(4)
-        a = self.driver.find_element_by_xpath('//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/div/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[2]/div/span').text
-
-
-
-
-
+        a = self.driver.find_element_by_xpath(
+            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/div/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[2]/div/span').text
+        self.driver.find_element_by_xpath('//*[@id="leftInner"]/ul/li[5]/div/div').click()  # 点击库存管理
+        self.driver.switch_to_default_content()  # 到最外层
+        time.sleep(1)
+        self.driver.find_element_by_xpath('//*[@id="leftInner"]/ul/li[5]/ul/li[1]/div').click()  # 点击库存查询
+        time.sleep(2)
+        self.driver.find_element_by_xpath(
+            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/section/div[2]/div[1]/div/div[3]/input').send_keys(
+            SKU1)  # 输入内码查询
+        self.driver.find_element_by_xpath(
+            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/section/div[2]/div[1]/div/label/span/input').click()
+        self.driver.find_element_by_xpath(
+            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/section/div[2]/div[1]/div/button[1]').click()  # 点击查询
+        time.sleep(5)
+        thrukuh = self.driver.find_element_by_xpath(
+            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/section/div[2]/div[2]/div[2]/div['
+            '2]/table/tbody/tr/td[10]/div/span').text
+        chayi = int(thrukuh) - int(thrukuq)
+        try:
+            assert chayi == 1 and '已入库' in a
+            print('4.门店入库成功，入库前配件' + SKU1, '的库存为' + thrukuq, '，入库后配件' + SKU1, '的库存为' + thrukuh, '入库数量为：1')
+        except Exception as e:
+            print('4.门店入库失败，入库前配件' + SKU1, '的库存为' + thrukuq, '，入库后配件' + SKU1, '的库存为' + thrukuh, '入库数量为：1', format(e))

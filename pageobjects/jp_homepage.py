@@ -8,6 +8,7 @@ class HomePage(BasePage):
     def username(self, text):  # 输入用户名
         self.type(self.input_box_un, text)
 
+
     input_box_pw = 'xpath=>//*[@id="app"]/div/div[2]/div/div/div/form/div[3]/div/div/input'  # 密码
 
     def password(self, text):  # 输入密码
@@ -45,7 +46,7 @@ class HomePage(BasePage):
         self.click(self.djxz1)
 
     '''采购管理'''
-    purchaseManagement1 = "xpath=>/html/body/div[1]/div/div[1]/div[1]/div/div[4]/ul/li[2]/div/div/span[2]"  # 采购管理
+    purchaseManagement1 = 'xpath=>//*[@id="leftInner"]/ul/li[2]/div/div'  # 采购管理
 
     def purchaseManagement(self):  # 采购管理
         self.click(self.purchaseManagement1)
@@ -56,7 +57,6 @@ class HomePage(BasePage):
     def purchasePlan(self):  # 滚动计划单
         self.click(self.purchasePlan1)
 
-    qh1 = "class_name=>ivu-layout"
 
     ppadd1 = "xpath=>/html/body/div[1]/div/div[2]/div[2]/div/div[2]/div/div/section[1]/div/div/div[3]/button"  # 新增
 
@@ -89,15 +89,15 @@ class HomePage(BasePage):
     def addsku(self):
         self.click(self.addsku1)
 
-    skusearch1 = "xpath=>/html/body/div[11]/div[2]/div/div/div[2]/div[1]/div/input"  # 输入配件
+    skusearch1 = "xpath=>/html/body/div[11]/div[2]/div/div/div[2]/div[1]/div[2]/div/input"  # 输入配件
 
     def skusearch(self, text):
         self.type(self.skusearch1, text)
 
-    skuxuanze1 = "xpath=>/html/body/div[11]/div[2]/div/div/div[2]/div[1]/button[1]"  # 选择按钮
+    skuchaxun1 = "xpath=>/html/body/div[11]/div[2]/div/div/div[2]/div[1]/button[1]"  # 选择查询
 
-    def skuxuanze(self):
-        self.click(self.skuxuanze1)
+    def skuchaxun(self):
+        self.click(self.skuchaxun1)
 
     doublesku1 = "xpath=>/html/body/div[11]/div[2]/div/div/div[2]/div[2]/div/div/div[1]/div[2]/table/tbody"  # 双击配件
 
@@ -119,6 +119,16 @@ class HomePage(BasePage):
     def caigouSure(self):
         self.click(self.caigouSure1)
 
+    gddaoru1 = '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/section[2]/div/div/div/div/div[3]/div/div[3]/div/div[2]/div/div[1]/button'  # 点击导入
+
+    def gddaoru(self):
+        self.click(self.gddaoru1)
+
+    gddaoruneima1 = '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/section[2]/div/div/div/div/div[3]/div/div[3]/div/div[2]/div/div[2]/div/div[2]/div/div/div/div[1]/div/div/button'  # 点击导入内码
+
+    def gddaoruneima(self):
+        self.click(self.gddaoruneima1)
+
     skuclose1 = "xpath=>/html/body/div[11]/div[2]/div/div/div[2]/div[1]/button[3]"  # 关掉配件选择弹框
 
     def skuclose(self):
@@ -129,21 +139,27 @@ class HomePage(BasePage):
     def orderplan(self):
         self.click(self.orderplan1)
 
-    caigouplan1 = "xpath=>/html/body/div[1]/div/div[2]/div[2]/div/div[2]/div/div/section[2]/div/div/div/div/div[1]/div/" \
-                  "div[2]/div[1]/div[2]/table/tbody/tr[1]"  # 选择保存的滚动计划单
 
-    def caigouplan(self):
-        self.click(self.caigouplan1)
 
     orderplansub1 = "xpath=>/html/body/div[1]/div/div[2]/div[2]/div/div[2]/div/div/section[1]/div/div/div[5]/button"  # 提交滚动计划单
 
     def orderplansub(self):
         self.click(self.orderplansub1)
 
-    orderPlanSubSucess1 = "xpath=>/html/body/div[1]/div/div[2]/div[2]/div/div[2]/div/div/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[2]/div/span"
+    gdmore1 = 'xpath=>//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/section[1]/div/div/div[2]/button'  # 点击更多
 
-    def orderPlanSubSucess(self):
-        self.panduan(self.orderPlanSubSucess1)
+    def gdmore(self):
+        self.click(self.gdmore1)
+
+    gdmoreshuru1 = 'xpath=>/html/body/div[24]/div[2]/div/div/div[2]/form/div[3]/div/div/input'  # 输入滚动计划单
+
+    def gdmoreshuru(self, text):
+        self.type(self.gdmoreshuru1, text)
+
+    gdmoresure = 'xpath=>/html/body/div[24]/div[2]/div/div/div[3]/div/button[1]'  # 点击确定
+
+    def gdmoresur(self):
+        self.click(self.gdmoresure)
 
     '''采购管理-计划采购订单'''
     planCaigouPlan1 = "xpath=>/html/body/div[1]/div/div[1]/div[1]/div/div[4]/ul/li[2]/ul/li[2]/div/span[2]"  # 点击计划采购订单
@@ -162,17 +178,17 @@ class HomePage(BasePage):
     def pcxzgys(self):
         self.click(self.pcxzgys1)
 
-    pcxzgymc1 = "xpath=>/html/body/div[39]/div[2]/div/div/div[2]/div[1]/div[1]/input"  # 输入供应商名称
+    pcxzgymc1 = "xpath=>/html/body/div[49]/div[2]/div/div/div[2]/div[1]/div/input"  # 输入供应商名称
 
     def pcxzgymc(self, text):
         self.type(self.pcxzgymc1, text)
 
-    pcxzgyscx1 = "xpath=>/html/body/div[39]/div[2]/div/div/div[2]/div[1]/button[1]"  # 搜索按钮
+    pcxzgyscx1 = "xpath=>/html/body/div[49]/div[2]/div/div/div[2]/div[1]/button[1]"  # 搜索按钮
 
     def pcxzgyscx(self):
         self.click(self.pcxzgyscx1)
 
-    doublegys1 = "xpath=>/html/body/div[39]/div[2]/div/div/div[2]/div[2]/div[2]/div/div[1]/div[2]/table/tbody"  # 计划采购订单，双击供应商
+    doublegys1 = "xpath=>/html/body/div[49]/div[2]/div/div/div[2]/div[2]/div[2]/div/div[1]/div[2]/table/tbody"  # 计划采购订单，双击供应商
 
     def doublegys(self):
         self.doubleclick(self.doublegys1)
@@ -182,12 +198,22 @@ class HomePage(BasePage):
     def pcuxgdjh(self):
         self.click(self.pcuxgdjh1)
 
-    pcxzgdjh1 = "xpath=>/html/body/div[42]/div[2]/div/div/div[2]/div[1]/div[2]/div[2]/div[2]/table/tbody/tr[1]/td[1]/div/span"  # 选择具体的滚动计划单
+    jhorder1 = 'xpath=>/html/body/div[52]/div[2]/div/div/div[2]/div[1]/div[1]/div[4]/div/input'  # 输入计划采购订单
+
+    def jhorder(self, text):
+        self.type(self.jhorder1, text)
+
+    jhsearchbutton1 = 'xpath=>/html/body/div[52]/div[2]/div/div/div[2]/div[1]/div[1]/div[5]/button'  # 点击查询按钮
+
+    def jhsearchbutton(self):
+        self.click(self.jhsearchbutton1)
+
+    pcxzgdjh1 = "xpath=>/html/body/div[52]/div[2]/div/div/div[2]/div[1]/div[2]/div[2]/div[2]/table/tbody/tr[1]/td[1]/div/span"  # 选择具体的滚动计划单
 
     def pcxzgdjh(self):
         self.click(self.pcxzgdjh1)
 
-    pcxz1 = "xpath=>/html/body/div[42]/div[2]/div/div/div[2]/div[1]/div[1]/div[6]/button"  # 点击选择按钮
+    pcxz1 = "xpath=>/html/body/div[52]/div[2]/div/div/div[2]/div[1]/div[1]/div[6]/button"  # 点击选择按钮
 
     def pcxz(self):
         self.click(self.pcxz1)
@@ -202,7 +228,7 @@ class HomePage(BasePage):
     def pcsub(self):
         self.click(self.pcsub1)
 
-    pcsre1 = "xpath=>/html/body/div[53]/div[2]/div/div/div/div/div[3]/button[2]"  # 点击确定
+    pcsre1 = "xpath=>/html/body/div[62]/div[2]/div/div/div/div/div[3]/button[2]"  # 点击确定
 
     def pcsre(self):
         self.click(self.pcsre1)
@@ -224,17 +250,17 @@ class HomePage(BasePage):
     def lsxzgys(self):
         self.click(self.lsxzgys1)
 
-    lsgys1 = "xpath=>/html/body/div[61]/div[2]/div/div/div[2]/div[1]/div[1]/input"  # 输入供应商名称
+    lsgys1 = "xpath=>/html/body/div[27]/div[2]/div/div/div[2]/div[1]/div/input"  # 输入供应商名称
 
     def lsgys(self, text):
         self.type(self.lsgys1, text)
 
-    lsgysSearch1 = "xpath=>/html/body/div[61]/div[2]/div/div/div[2]/div[1]/button[1]"  # 搜索按钮
+    lsgysSearch1 = "xpath=>/html/body/div[27]/div[2]/div/div/div[2]/div[1]/button[1]"  # 搜索按钮
 
     def lsgysSearch(self):
         self.click(self.lsgysSearch1)
 
-    lsgysxz1 = "xpath=>/html/body/div[61]/div[2]/div/div/div[2]/div[2]/div[2]/div/div[1]/div[2]/table/tbody/tr"  # 双击选择供应商
+    lsgysxz1 = "xpath=>/html/body/div[27]/div[2]/div/div/div[2]/div[2]/div[2]/div/div[1]/div[2]/table/tbody/tr"  # 双击选择供应商
 
     def lsgysxz(self):
         self.doubleclick(self.lsgysxz1)
@@ -245,37 +271,37 @@ class HomePage(BasePage):
     def lssddSku(self):
         self.click(self.lssddSku1)
 
-    lsskuSeaech1 = "xpath=>/html/body/div[75]/div[2]/div/div/div[2]/div[1]/div/input"  # 输入配件
+    lsskuSeaech1 = "xpath=>/html/body/div[40]/div[2]/div/div/div[2]/div[1]/div[2]/div/input"  # 输入配件
 
     def lsskuSeaech(self, text):
         self.type(self.lsskuSeaech1, text)
 
-    lsskusearchButton1 = "xpath=>/html/body/div[75]/div[2]/div/div/div[2]/div[1]/button[1]"  # 点击查询
+    lsskusearchButton1 = "xpath=>/html/body/div[40]/div[2]/div/div/div[2]/div[1]/button[1]"  # 点击查询
 
     def lsskusearchButton(self):
         self.click(self.lsskusearchButton1)
 
-    lsxzsku1 = "xpath=>/html/body/div[75]/div[2]/div/div/div[2]/div[2]/div/div/div[1]/div[2]/table/tbody"  # 双击选择配件
+    lsxzsku1 = "xpath=>/html/body/div[40]/div[2]/div/div/div[2]/div[2]/div/div/div[1]/div[2]/table/tbody/tr/td[2]/div/label/span/input"  # 双击选择配件
 
     def lsxzsku(self):
         self.doubleclick(self.lsxzsku1)
 
-    lsskuNum1 = "xpath=>/html/body/div[83]/div[2]/div/div/div[2]/form/div[4]/div[1]/div/div/div/input"  # 输入数量
+    lsskuNum1 = "xpath=>/html/body/div[48]/div[2]/div/div/div[2]/form/div[4]/div[1]/div/div/div/input"  # 输入数量
 
     def lsskuNum(self, text):
         self.type(self.lsskuNum1, text)
 
-    lsskuPrice1 = "xpath=>/html/body/div[83]/div[2]/div/div/div[2]/form/div[5]/div[1]/div/div/div/input"  # 输入单价
+    lsskuPrice1 = "xpath=>/html/body/div[48]/div[2]/div/div/div[2]/form/div[5]/div[1]/div/div/div/input"  # 输入单价
 
     def lsskuPrice(self, text):
         self.type(self.lsskuPrice1, text)
 
-    lssure1 = "xpath=>/html/body/div[83]/div[2]/div/div/div[3]/div/button[1]"  # 点击确定按钮
+    lssure1 = "xpath=>/html/body/div[48]/div[2]/div/div/div[3]/div/button[1]"  # 点击确定按钮
 
     def lssure(self):
         self.click(self.lssure1)
 
-    lsclose1 = "xpath=>/html/body/div[75]/div[2]/div/div/div[2]/div[1]/button[3]"  # 点击关闭添加配件弹框
+    lsclose1 = "xpath=>/html/body/div[40]/div[2]/div/div/div[2]/div[1]/button[3]"  # 点击关闭添加配件弹框
 
     def lsclose(self):
         self.click(self.lsclose1)
@@ -290,10 +316,15 @@ class HomePage(BasePage):
     def lsSub(self):
         self.click(self.lsSub1)
 
-    lsSubSure1 = 'xpath=>/html/body/div[86]/div[2]/div/div/div/div/div[3]/button[2]'  # 点击确定
+    lsSubSure1 = 'xpath=>/html/body/div[52]/div[2]/div/div/div/div/div[3]/button[2]'  # 点击确定
 
     def lsSubSure(self):
         self.click(self.lsSubSure1)
+
+    lsdjStatus1 = '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[2]/div/span'  # 获取单据状态
+
+    def lsdjStatus(self):
+        self.wenben(self.lsdjStatus1)
 
     '''外采订单'''
     wcCaigouOrder1 = 'xpath=>//*[@id="leftInner"]/ul/li[2]/ul/li[5]'  # 点击外采订单
@@ -525,10 +556,6 @@ class HomePage(BasePage):
     def dbsqslsure(self):
         self.click(self.dbsqslsure1)
 
-
-
-
-
     '''调拨出库'''
 
     dbck1 = 'xpath=>//*[@id="leftInner"]/ul/li[4]/ul/li[1]/ul/li[3]'  # 点击调拨出库菜单
@@ -560,16 +587,17 @@ class HomePage(BasePage):
 
     dbchuchukusure1 = '/html/body/div[90]/div[2]/div/div/div/div/div[3]/button[2]'  # 点击确认
 
-
-
-
-
     '''调入退回申请'''
 
-    doubledcf1 = 'xpath=>//*[contains(text(),"1")]'
+    doubledcf1 = 'xpath=>//*[contains(text(),"启用")]'
+
+    def doubledcfe(self):
+        self.doubleclick(self.doubledcf1)
+
+    doubledcf2 = 'xpath=>//*[contains(text(),"启用")]'
 
     def doubledcf(self):
-        self.doubleclick(self.doubledcf1)
+        self.doubleclick(self.doubledcf2)
 
     '''库存管理'''
     kcgl1 = '//*[@id="leftInner"]/ul/li[5]/div/div'  # 库存管理
@@ -631,7 +659,7 @@ class HomePage(BasePage):
     def xtsz(self):
         self.click(self.xtsz1)
 
-    jcsj1 ='xpath=>//*[@id="leftInner"]/ul/li[9]/ul/li[1]/div/div'  # 点击基础数据
+    jcsj1 = 'xpath=>//*[@id="leftInner"]/ul/li[9]/ul/li[1]/div/div'  # 点击基础数据
 
     def jcsj(self):
         self.click(self.jcsj1)
@@ -675,5 +703,3 @@ class HomePage(BasePage):
 
     def jqpsuren(self):
         self.click(self.jqpsuren1)
-
-

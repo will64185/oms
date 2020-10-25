@@ -24,6 +24,11 @@ class MdaoZ(unittest.TestCase):
         browse = BrowserEngine(cls)
         cls.driver = browse.open_browser(cls)
 
+    @classmethod
+    def tearDownClass(cls):
+
+        cls.driver.quit()
+
     def test_oms_allot1(self):
         '''门店调拨入库'''
 
@@ -90,7 +95,7 @@ class MdaoZ(unittest.TestCase):
             homepage.get_windows_img()
 
     def test_oms_allot2(self):
-        '''门店调入退回申请'''
+        """门店调入退回申请"""
         homepage = HomePage(self.driver)
         self.driver.find_element_by_xpath('//*[@id="leftInner"]/ul/li[4]/ul/li[2]/div/div').click()  # 点击调拨退货
         time.sleep(1)
@@ -103,11 +108,20 @@ class MdaoZ(unittest.TestCase):
             '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div[3]/div/div[2]/form/div[1]/div/div/div[2]/button').click()  # 选择调出方
         time.sleep(2)
 
-        self.driver.find_element_by_xpath('//input[@class="el-input__inner"]').send_keys(qhgs)  # 输入调出方
         time.sleep(2)
-        self.driver.find_element_by_xpath('//*[@class="mr10 ivu-btn ivu-btn-primary"]').click()  # 点击查询
+        shuru_results = self.driver.find_elements_by_xpath('//input[@class="el-input__inner"]')
+        # print(shuru_results)
+        shuru_results[1].send_keys(qhgs)
+        # self.driver.find_element_by_xpath('//input[@class="el-input__inner"]').send_keys(qhmd)  # 输入调出方
         time.sleep(2)
-        homepage.doubledcf()
+
+        chaxun_results = self.driver.find_elements_by_xpath('//*[@class="mr10 ivu-btn ivu-btn-primary"]')
+        # print(chaxun_results)
+        chaxun_results[4].click()
+        # self.driver.find_elements_by_xpath('//*[@class="mr10 ivu-btn ivu-btn-primary"]').click()  # 点击查询
+        time.sleep(2)
+        homepage.doubledcfe()
+
         time.sleep(2)
         self.driver.find_element_by_xpath(
             '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div[3]/div/div[3]/div/div[1]/button').click()  # 添加配件
@@ -130,9 +144,11 @@ class MdaoZ(unittest.TestCase):
         self.driver.find_element_by_xpath(
             '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[1]/div/div/div[5]/button').click()  # 点击提交
         a = self.driver.find_element_by_xpath(
-            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div[2]/table/tbody/tr/td[2]/div/span').text
+            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div['
+            '1]/div/div[2]/div[1]/div[2]/table/tbody/tr/td[2]/div/span').text
         drthsqd = self.driver.find_element_by_xpath(
-            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[6]/div/span').text
+            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div['
+            '1]/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[6]/div/span').text
         try:
             assert "待受理" in a
             print('1.调入退回申请单' + drthsqd, '已提交')
@@ -141,11 +157,12 @@ class MdaoZ(unittest.TestCase):
             homepage.get_windows_img()
 
     def test_oms_allot3(self):
-        '''总部调入退回申请受理后，门店出库'''
+        """总部调入退回申请受理后，门店出库"""
 
         homepage = HomePage(self.driver)
         drthsqd = self.driver.find_element_by_xpath(
-            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[6]/div/span').text
+            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div['
+            '1]/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[6]/div/span').text
         time.sleep(2)
         homepage.qhzh()  # 切换门店
         homepage.shurumd(qhgs)  # 输入需要切换的门店
@@ -164,7 +181,8 @@ class MdaoZ(unittest.TestCase):
             '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/div/section[1]/div/div/div[6]/button').click()
         time.sleep(2)
         self.driver.find_element_by_xpath(
-            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/div/section[2]/div[1]/div/div[2]/div[2]/table/tbody/tr/td[2]/div/button[1]').click()  # 点击受理
+            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/div/section[2]/div[1]/div/div[2]/div['
+            '2]/table/tbody/tr/td[2]/div/button[1]').click()  # 点击受理
         self.driver.find_element_by_xpath('/html/body/div[19]/div[2]/div/div/div[3]/button[2]').click()  # 点击确定
         time.sleep(2)
         self.driver.refresh()
@@ -219,7 +237,8 @@ class MdaoZ(unittest.TestCase):
         time.sleep(2)
 
         a = self.driver.find_element_by_xpath(
-            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[2]/div/span').text
+            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div['
+            '1]/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[2]/div/span').text
         self.driver.find_element_by_xpath('//*[@id="leftInner"]/ul/li[5]/div/div').click()  # 点击库存管理
         self.driver.switch_to_default_content()  # 到最外层
         time.sleep(1)
@@ -246,13 +265,14 @@ class MdaoZ(unittest.TestCase):
             print('门店入库失败，出库前配件' + SKU1, '的库存为' + thqkucun, '，出库后配件' + SKU1, '的库存为' + thhkucun, '出库数量为：2', format(e))
 
     def test_oms_allot4(self):
-        '''总部调入退回入库'''
+        """总部调入退回入库"""
 
         homepage = HomePage(self.driver)
         self.driver.find_element_by_xpath('//*[@id="leftInner"]/ul/li[4]/ul/li[2]/ul/li[1]/div').click()
         time.sleep(2)
         drthsqd = self.driver.find_element_by_xpath(
-            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[6]/div/span').text
+            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/main/div[1]/section[2]/div/div/div/div/div['
+            '1]/div/div[2]/div[1]/div[2]/table/tbody/tr[1]/td[6]/div/span').text
 
         homepage.qhzh()  # 切换门店
         homepage.shurumd(qhgs)  # 输入需要切换的门店
@@ -293,7 +313,8 @@ class MdaoZ(unittest.TestCase):
         self.driver.find_element_by_xpath('/html/body/div[30]/div[2]/div/div/div[3]/button[2]').click()
         time.sleep(2)
         dcthrkd = self.driver.find_element_by_xpath(
-            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/div/section[2]/div/div/div/div/div[1]/div/div[2]/div[1]/div[2]/table/tbody/tr/td[6]/div/span').text
+            '//*[@id="routes"]/div[2]/div[2]/div/div[2]/div/div/div/section[2]/div/div/div/div/div[1]/div/div[2]/div['
+            '1]/div[2]/table/tbody/tr/td[6]/div/span').text
         a = config.get("testWms", "wms")
         js = "window.open(" + '"' + a + '"' + ")"  # 打开wms
         self.driver.execute_script(js)
@@ -336,7 +357,7 @@ class MdaoZ(unittest.TestCase):
         time.sleep(1)
         self.driver.find_element_by_xpath(
             '//*[@id="right-content"]/div/section[1]/div[1]/div/div[6]/button[1]').click()  # 点击查询
-        time.sleep(2)
+        time.sleep(4)
         self.driver.find_element_by_xpath(
             '//*[@id="right-content"]/div/section[2]/div/div/div[2]/table/tbody/tr/td[3]/div/a').click()  # 点击业务单号
         time.sleep(2)

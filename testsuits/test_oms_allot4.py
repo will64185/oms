@@ -31,7 +31,10 @@ class MdaoZ(unittest.TestCase):
         browse = BrowserEngine(cls)
         cls.driver = browse.open_browser(cls)
 
+    @classmethod
+    def tearDownClass(cls):
 
+        cls.driver.quit()
 
     def test_oms_allot1(self):
         '''门店向总部调拨，oms有可售数量的紧俏品，非紧俏品自动受理'''
@@ -103,7 +106,7 @@ class MdaoZ(unittest.TestCase):
         homepage.dbclose()  # 关闭添加配件弹框
         time.sleep(1)
         homepage.dbbaocun()  # 点击保存按钮
-        time.sleep(1)
+        time.sleep(3)
         homepage.dbaddress()  # 点击选择收货地址
         homepage.dbxuanzaddress()  # 点击选择配送方式
         homepage.dbzipei()  # 选择自配

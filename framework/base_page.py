@@ -3,6 +3,7 @@ from selenium.common.exceptions import NoSuchElementException
 import os.path
 from framework.logger import Logger
 from selenium.webdriver.common.action_chains import ActionChains  # 引入 ActionChains 类
+
 # create a logger instance
 logger = Logger(logger="BasePage").getlog()
 
@@ -11,28 +12,33 @@ class BasePage(object):
     """
     定义一个页面基类，让所有页面都继承这个类，封装一些常用的页面操作方法
     """
+
     def __init__(self, driver):
         self.driver = driver
+
     # quit browser and end testing
 
     def quit_browser(self):
         self.driver.quit()
+
     # 浏览器前进操作
 
     def forward(self):
         self.driver.forward()
         logger.info("Click forward on current page.")
-    # 浏览器后退操作
 
+    # 浏览器后退操作
 
     def back(self):
         self.driver.back()
         logger.info("Click back on current page.")
+
     # 隐式等待
 
     def wait(self, seconds):
         self.driver.implicitly_wait(seconds)
         logger.info("wait for %d seconds." % seconds)
+
     # 点击关闭当前窗口
 
     def close(self):
@@ -41,6 +47,7 @@ class BasePage(object):
             logger.info("Closing and quit the browser.")
         except NameError as e:
             logger.error("Failed to quit the browser with %s" % e)
+
     # 保存图片
 
     def get_windows_img(self):
@@ -56,6 +63,7 @@ class BasePage(object):
         except NameError as e:
             logger.error("Failed to take screenshot! %s" % e)
             self.get_windows_img()
+
     # 定位元素方法
 
     def find_element(self, selector):
@@ -101,6 +109,49 @@ class BasePage(object):
             raise NameError("Please enter a valid type of targeting elements.")
         return element
 
+    def find_elements(self, selector):
+        """
+         来切割字符串
+        :param selector:
+        :return: element
+        """
+        elements = ''
+        if '=>' not in selector:
+            return self.driver.find_element_by_id(selector)
+        selector_by = selector.split('=>')[0]
+        selector_value = selector.split('=>')[1]
+        if selector_by == "i" or selector_by == 'id':
+            try:
+                elements = self.driver.find_element_by_id(selector_value)
+                logger.info("Had find the element \' %s \' successful "
+                            "by %s via value: %s " % (elements.text, selector_by, selector_value))
+            except NoSuchElementException as e:
+                logger.error("NoSuchElementException: %s" % e)
+                self.get_windows_img()
+        elif selector_by == "n" or selector_by == 'name':
+            elements = self.driver.find_element_by_name(selector_value)
+        elif selector_by == "c" or selector_by == 'class_name':
+            elements = self.driver.find_element_by_class_name(selector_value)
+        elif selector_by == "l" or selector_by == 'link_text':
+            elements = self.driver.find_element_by_link_text(selector_value)
+        elif selector_by == "p" or selector_by == 'partial_link_text':
+            elements = self.driver.find_element_by_partial_link_text(selector_value)
+        elif selector_by == "t" or selector_by == 'tag_name':
+            elements = self.driver.find_element_by_tag_name(selector_value)
+        elif selector_by == "x" or selector_by == 'xpath':
+            try:
+                elements = self.driver.find_element_by_xpath(selector_value)
+                logger.info("Had find the element \' %s \' successful "
+                            "by %s via value: %s " % (elements.text, selector_by, selector_value))
+            except NoSuchElementException as e:
+                logger.error("NoSuchElementException: %s" % e)
+                self.get_windows_img()
+        elif selector_by == "s" or selector_by == 'selector_selector':
+            elements = self.driver.find_element_by_css_selector(selector_value)
+        else:
+            raise NameError("Please enter a valid type of targeting elements.")
+        return elements
+
     # 输入
     def type(self, selector, text):
         el = self.find_element(selector)
@@ -112,9 +163,8 @@ class BasePage(object):
             logger.error("Failed to type in input box with %s" % e)
             self.get_windows_img()
 
-
     # 用于判断的界面的元素
-    def panduan(self, selector):
+    def wenben(self, selector, text):
         el = self.find_element(selector).text
         logger.info("判断条件是 %s" % el)
         return el
@@ -134,8 +184,6 @@ class BasePage(object):
             print('点击成功')
         except Exception as  e:
             print('fail')
-
-
 
     # 清除文本框
     def clear(self, selector):
@@ -162,11 +210,26 @@ class BasePage(object):
         logger.info("Current page title is %s" % self.driver.title)
         return self.driver.title
 
-
-
     @staticmethod
     def sleep(seconds):
-
         time.sleep(seconds)
-
         logger.info("Sleep for %d seconds" % seconds)
+
+    # 验证元素是否存在
+    def Check_element(self, type, value):
+        if type == "xpath":
+            self.driver.find_element_by_xpath(value)
+        elif type == "id":
+            self.driver.find_element_by_id(value)
+        elif type == "name":
+            self.driver.find_element_by_name(value)
+        elif type == "link_text":
+            self.driver.find_element_by_link_text(value)
+        elif type == "partial_link_text":
+            self.driver.find_element_by_partial_link_text(value)
+
+    # 切换到新窗口
+    def Current_handel(self):
+        all_handles = self.driver.window_handles
+        for handle in all_handles:
+            self.driver.switch_to.window(handle)

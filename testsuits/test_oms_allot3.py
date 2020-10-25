@@ -23,7 +23,10 @@ class MdaoZ(unittest.TestCase):
         browse = BrowserEngine(cls)
         cls.driver = browse.open_browser(cls)
 
+    @classmethod
+    def tearDownClass(cls):
 
+        cls.driver.quit()
 
     def test_oms_allot1(self):
         '''门店向总部调拨，wms部分发货'''
